@@ -1,0 +1,15 @@
+.section {
+  width: 100%;
+
+  &__wrapper {
+    max-width: 1520px;
+    margin: 0 auto;
+  }
+
+  &_theme {
+    &_dark {
+      background-color: black;
+      color: white;
+    }
+  }
+}

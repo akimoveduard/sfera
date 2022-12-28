@@ -1,0 +1,19 @@
+//- Подключение макета
+extends Views/layouts/default.pug
+
+//- Инициализация переменных для использования в макете
+block variables
+  - const title = 'SFERA'
+  - const description = 'Описание страницы'
+
+//- Подключение индивидуального скрипта страницы
+append script
+  script(src=require('./main.js') defer)
+
+//- Подключение уникального стиля страницы
+append style
+  link(href=require('./styles.scss') rel='stylesheet')
+
+block content
+  main
+    h1 this is main
