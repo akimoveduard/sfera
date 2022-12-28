@@ -10,7 +10,13 @@ module.exports = (env, argv) => {
     stats: 'minimal',
 
     entry: {
-      index: 'src/views/pages/index/index.pug',
+      index: 'src/views/pages/home/index.pug',
+      apps: 'src/views/pages/home/apps.pug',
+      downloads: 'src/views/pages/downloads/index.pug',
+      investment: 'src/views/pages/investment/index.pug',
+      news: 'src/views/pages/news/index.pug',
+      startup: 'src/views/pages/startup/index.pug',
+      team: 'src/views/pages/team/index.pug',
     },
 
     output: {
