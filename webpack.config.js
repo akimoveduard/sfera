@@ -11,11 +11,11 @@ module.exports = (env, argv) => {
 
     entry: {
       index: 'src/views/pages/home/index.pug',
-      apps: 'src/views/pages/home/apps.pug',
+      apps: 'src/views/pages/apps/index.pug',
       downloads: 'src/views/pages/downloads/index.pug',
       investment: 'src/views/pages/investment/index.pug',
       news: 'src/views/pages/news/index.pug',
-      startup: 'src/views/pages/startup/index.pug',
+      startups: 'src/views/pages/startups/index.pug',
       team: 'src/views/pages/team/index.pug',
     },
 
