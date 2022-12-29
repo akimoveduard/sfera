@@ -1,0 +1,10 @@
+.team{
+	&___body{
+		display: flex;
+	}
+	&__column{
+		flex: 0 1 20%;
+	}
+}
+
+.team__column_b{}
