@@ -15,3 +15,34 @@ append style
   link(href=require('./styles.scss') rel='stylesheet')
 
 block content
+  .section
+     .section__wrapper__about
+        .section__wrapper__block-one
+            .section__wrapper__block-text
+                h2.section__wrapper__about__title Проект SFERA — это </br>Платформа приложений
+                p.section__wrapper__about__subtitle Также в отношении нас будут корректны термины:</br> супер приложение,</br>  анти социальная сеть.
+            .section__wrapper__block__button
+                button.section__wrapper__block__button__android Скачать на Android
+                  img(src=require('Images/about-images/component-down.svg'))
+                button.section__wrapper__block__button__iOs Скачать на iOS
+                  img(src=require('Images/about-images/component-down.svg'))
+        .section__wrapper__about__block-images
+            img.section__wrapper__about__images(src=require('Images/about-images/lead-img.png'))
+  .section-info
+        .section-info__wrapper
+            .section-info__wrapper__block
+                .section-info__wrapper__block__img
+                    img.section-info__wrapper__img(src=require('Images/about-images/info-one.png'))
+                .section-info__wrapper__block__text
+                     p.section-info__wrapper__block__text-explanation Проект SFERA — это независимый проект, который</br> создает небольшая команда, главная цель которого</br>  — изменить мир к лучшему и начать этот процесс</br>  «с основ», с пользователей, с контента, который </br> потребляет каждый человек, и с решения задач,</br>  которые не смотря на все технологии, все еще</br>  остаются не решенными.
+            .section-info__wrapper__block--reverse
+                .section-info__wrapper__block__img
+                    img.section-info__wrapper__img(src=require('Images/about-images/info-two.png'))
+                .section-info__wrapper__block__text
+                    p.section-info__wrapper__block__text-explanation SFERA находится вне политики, вне </br>государственности. Мы считаем своим домом весь </br> мир и хотим работать на благо всех людей на</br> планете. Для нас не имеет значения язык, на</br> котором говорит человек, цвет кожи, раса и вера.</br> Мы считаем, что наш мир можно сделать лучше и</br> он должен быть лучше. Мы верим, что это </br> возможно.
+            .section-info__wrapper__block
+                .section-info__wrapper__block__img
+                    img.section-info__wrapper__img(src=require('Images/about-images/info-tree.png'))
+                .section-info__wrapper__block__text
+                    p.section-info__wrapper__block__text-explanation Проект SFERA — это независимый проект, который</br> создает небольшая команда, главная цель которого</br> — изменить мир к лучшему и начать этот процесс</br> «с основ», с пользователей, с контента, который</br> потребляет каждый человек, и с решения задач,</br> которые не смотря на все технологии, все еще</br> остаются не решенными.
+
