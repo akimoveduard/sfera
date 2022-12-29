@@ -15,3 +15,113 @@ append style
   link(href=require('./styles.scss') rel='stylesheet')
 
 block content
+  main.main 
+    article.main-article
+      section.lead 
+        .lead-text
+          h1.lead__title IT-СТАРТАП
+          p.lead__subtitle SFERA цифровая экосистема для 
+            <br> развития и пользы вашей жизни
+          p.lead__slogan Изменим мир вместе
+          .lead__button
+            button.download__button__android Скачать на Android
+            button.download__button Скачать на OIS
+        .lead__image 
+            .lead__image__image 
+              img(src=require("Images/home/Foto main.png"))
+            .lead__image__faq
+              img(src=require("Images/home/F.A.Q..svg")) 
+
+    article.description-article
+      section.description
+        .description-text    
+          .description__content
+            .description__image
+              .description__image__line
+                img(src=require("Images/home/Line 36.svg"))
+              .description__image__logo
+                img.description__image(src=require("Images/home/Лого рабочий.svg"))
+              p.lead__subtitle — это мобильное приложение, цифровая экосистема,
+                |строящаяся по принципу all in one, когда все что
+                |вам необходимо находится в одном месте. Основой системы
+                |является мессенджер, на базе которого существуют
+                |различные сервисы.
+              p.lead__subtitle Все сервисы и весь контент в системе ориентированы на три
+                |сферы жизни каждого человека: работа, личная жизнь, хобби.
+                |SFERA должна помогать развиваться пользователю в первую очередь
+                |в оффлайн жизни.
+              p.lead__subtitle Все сервисы и весь контент должны будут попадать под три
+                |определения: развитие, польза, интересы. 
+          .lead__image__image 
+              img(src=require("Images/home/Group 48095454 1.png"))  
+
+    article.apps-article
+      section.apps
+          ul.apps-list
+            li.apps-list__item
+              .apps__text
+                h2.lead__title Главный профиль
+                p.lead__subtitle Сервис (страница), где владелец (пользователь) размещает информацию о себе и своем окружении в фото и видео формате.
+              img(src=require("Images/home/profile.png"))
+            li.apps-list__item
+              .apps__text
+                h2.lead__title ASAP
+                p.lead__subtitle ASAP — мультифункциональный мессенджер, который вберет в себя лучшие функции существующих мессенджеров. 
+              img(src=require("Images/home/Group 480954567.png"))
+          ul.apps-list  
+            li.apps-list__item
+              .apps__text
+                h2.lead__title MeetNet
+                p.lead__subtitle MeetNet — сервис для знакомств, синхронизированный с личным профилем. Люди подбираются по более чем 50 параметрам. 
+              img(src=require("Images/home/meetnet.png"))
+            li.apps-list__item
+              .apps__text
+                h2.lead__title Videos
+                p.lead__subtitle Видео сервис, главное преимущество которого, предоставление исключительно полезного, развивающего, интересного контента.
+              img(src=require("Images/home/videos.png"))
+          a.apps__link(href="") Посмотреть все приложения цифровой экосистемы
+    article.anons-article
+      section.anons
+        ul.anons-list
+          li.anons-list__item 
+            .anons__content 
+              img(src=require("Images/home/Лого рабочий anons.svg"))
+              p.anons__subtitle__bold приглашает стартапы
+            .anons__content__title 
+              p.anons__subtitle SFERA обладает функционалом мессенджера, социальной сети, видеосервиса, сервиса по поиску работы и деловым контактам, сервис знакомств и многое другое, что уже есть сейчас и будет в будущем. 
+              p.anons__subtitle Каждый сервис в системе, либо полностью уникален, либо имеет отличительные особенности в сравнении с аналогами.
+              p.anons__slogan__bold Подключите и вы свой сервис к цифровой экосистеме
+              button Хочу в SFERA       
+          li.anons-list__item
+            .anons__content 
+              img(src=require("Images/home/Лого рабочий anons.svg"))
+              p.anons__subtitle__bold инвестиции
+            .anons__content__title 
+              p.anons__subtitle SFERA обладает функционалом мессенджера, социальной сети, видеосервиса, сервиса по поиску работы и деловым контактам, сервис знакомств и многое другое, что уже есть сейчас и будет в будущем. 
+              p.anons__subtitle На данном этапе мы не можем четко сказать, как и когда инвестор получит документальное подтверждение. Но это точно произойдёт. Возможны два варианта:
+              ul
+                li подписание опционов с последующим переводом в акции;
+                li предоставление токенов.
+              p.anons__subtitle Наша главная цель в работе с инвесторами — это Х100 для инвесторов.
+              p.anons__slogan__bold Инвестиции ускоряют нашу работу 
+              button Хочу инвестировать в SFERA
+
+    article.swiper-article
+      section.swiper
+        .swiper
+          .swiper-wrapper
+            .swiper-slide
+              img(src=require("Images/home/Горизонтальная обложка на FB-рус 1200x630.png"))
+            .swiper-slide
+              img(src=require("Images/home/Горизонтальная обложка на FB-рус 1200x630.png"))
+            .swiper-slide 
+              img(src=require("Images/home/Горизонтальная обложка на FB-рус 1200x630.png"))
+            //- .swiper-slide 
+            //-   img(src=require("Images/home/Горизонтальная обложка на FB-рус 1200x630.png"))
+            //- .swiper-slide 
+            //-   img(src=require("Images/home/Горизонтальная обложка на FB-рус 1200x630.png"))
+            //-   |...
+          .swiper-pagination
+          .swiper-button-prev
+          .swiper-button-next
+          .swiper-scrollbar
