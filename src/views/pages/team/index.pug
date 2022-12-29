@@ -14,113 +14,29 @@ append script
 append style
   link(href=require('./styles.scss') rel='stylesheet')
 
+
 block content
-  .team
-    .team__body 
-      .team__column.team__column_b
-        a(href='#').block-team__item.item
-          span.item__logo
-            img.item__logo_s(src=require('Images/team/Rectangle_191.png'))
-            span.item__text
-          span.item__image.ibg
-            img.item__image_b
-        //- .team__block.block-team 
-        //-   .block-team__row
-        //-     .block-team__column
-        //-       a.block-team__item(href='#').item
-        //-         span.item__logo
-        //-           img
-        //-           span.item__text 
-        //-         span.item__image.ibg
-        //-           img
-        //-     .block-team__column
-        //-       a.block-team__item(href='#').item
-        //-         span.item__logo
-        //-           img
-        //-           span.item__text 
-        //-         span.item__image.ibg
-        //-           img
-        //-     .block-team__column
-        //-       a.block-team__item(href='#').item
-        //-         span.item__logo
-        //-           img
-        //-           span.item__text 
-        //-         span.item__image.ibg
-        //-           img
-        //-     .block-team__column
-        //-       a.block-team__item(href='#').item
-        //-         span.item__logo
-        //-           img
-        //-           span.item__text 
-        //-         span.item__image.ibg
-        //-           img
-        //-     .block-team__column
-        //-       a.block-team__item(href='#').item
-        //-         span.item__logo
-        //-           img
-        //-           span.item__text 
-        //-         span.item__image.ibg
-        //-           img
-      .team__column
-        a(href='#').block-team__item.item
-          span.item__logo
-            img
-            span
-          span.item__image.ibg
-            img
-      .team__column
-        a(href='#').block-team__item.item
-          span.item__logo
-            img
-            span
-          span.item__image.ibg
-            img
-      .team__column
-        a(href='#').block-team__item.item
-          span.item__logo
-            img
-            span
-          span.item__image.ibg
-            img
-      .team__column
-        a(href='#').block-team__item.item
-          span.item__logo
-            img
-            span
-          span.item__image.ibg
-            img
-      .team__column
-        a(href='#').block-team__item.item
-          span.item__logo
-            img
-            span
-          span.item__image.ibg
-            img
-      .team__column
-        a(href='#').block-team__item.item
-          span.item__logo
-            img
-            span
-          span.item__image.ibg
-            img
-      .team__column
-        a(href='#').block-team__item.item
-          span.item__logo
-            img
-            span
-          span.item__image.ibg
-            img
-      .team__column
-        a(href='#').block-team__item.item
-          span.item__logo
-            img
-            span
-          span.item__image.ibg
-            img
-      .team__column
-        a(href='#').block-team__item.item
-          span.item__logo
-            img
-            span
-          span.item__image.ibg
-            img
+  -
+    const team = [
+      {
+        name: 'Игорь',
+        role: 'Основатель',
+        image: '1',
+      },
+      {
+        name: 'Карен',
+        role: 'Проект-менеджер',
+        image: '2',
+      }
+    ]
+  
+  //- Верстай ниже
+  article.team
+    section.team__photos.section 
+      .section__wrapper 
+        ul.team__list 
+          each person in team
+            li.team__item
+              img.team__photo(src= require("Images/team/" + person.image + ".jpg"), alt="Фото участника команды SFERA")
+              p.team__person-name= person.name + " "
+                span.team__person-role= person.role
