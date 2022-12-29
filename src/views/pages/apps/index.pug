@@ -1,0 +1,144 @@
+//- Подключение макета
+extends Views/layouts/default.pug
+
+//- Инициализация переменных для использования в макете
+block variables
+  - const title = 'SFERA'
+  - const description = 'Описание страницы'
+
+//- Подключение индивидуального скрипта страницы
+append script
+  script(src=require('./main.js') defer)
+
+//- Подключение уникального стиля страницы
+append style
+  link(href=require('./styles.scss') rel='stylesheet')
+
+block content
+  .section
+      .section__wrapper
+          h2.sheet_title Подприложения SFERA
+          ul.apps-list
+            li.apps-list__item
+              a.apps-list__link Профиль
+                img.apps-list__img(src=require('Images/apps_image/Side Menu Icons.svg'))
+            li.apps-list__item
+              a.apps-list__link Лента
+                img.apps-list__img(src=require('Images/apps_image/Side Menu Icons (1).svg'))
+            li.apps-list__item
+              a.apps-list__link ASAP
+                img.apps-list__img(src=require('Images/apps_image/Side Menu Icons (2).svg'))
+            li.apps-list__item
+              a.apps-list__link MeetNet
+                img.apps-list__img(src=require('Images/apps_image/Side Menu Icons (3).svg'))
+            li.apps-list__item
+              a.apps-list__link Choose
+                img.apps-list__img(src=require('Images/apps_image/Side Menu Icons (4).svg'))
+            li.apps-list__item
+              a.apps-list__link Black Box
+                img.apps-list__img(src=require('Images/apps_image/Side Menu Icons (5).svg'))
+            li.apps-list__item
+              a.apps-list__link VideoS
+                img.apps-list__img(src=require('Images/apps_image/Side Menu Icons (6).svg'))
+            li.apps-list__item
+              a.apps-list__link Job Lite
+                img.apps-list__img(src=require('Images/apps_image/Side Menu Icons (7).svg'))
+            li.apps-list__item
+              a.apps-list__link Find Friends
+                img.apps-list__img(src=require('Images/apps_image/Side Menu Icons (8).svg'))
+  .section
+    .section-one
+      .section-one-wrapper
+          p.section-one__wrapper__text-about-spheres Основой приложения SFERA PROJECT является мессенджер,на </br> базе которого существуют уже сейчас и постоянно добавляются </br>  разносторонние сервисы, например, сервис по поиску работы </br> (Job Light), сервис знакомств (MeetNet), сервис по поиску друзей </br>  (Find Friends) и т.д. Все сервисы являются неотъемлемой частью</br> SFERA и работают как единое приложение. На данный момент все </br> сервисы разрабатываются нами, но в будущем планируется </br> подключение сторонних сервисов. </br></br> На данный момент в системе доступны сервисы первого этапа</br>  разработки.
+          .section-one__wrapper__button
+             button.section-one__wrapper__button-android Скачать на Android
+                img.section-one__wrapper__img-button(src=require('Images/apps_image/Component 2.svg'))
+             button.section-one__wrapper__button-iOs Скачать на OIS
+                img.section-one__wrapper__img-button(src=require('Images/apps_image/Component 2.svg'))
+      .section-one__wrapper-img
+          img.section-one__wrapper__img(src=require('Images/apps_image/Foto main (1).svg'))
+  .section-info
+    .section-info__wrapper
+        .section-info__wrapper__block
+            .section-info__wrapper__block__img
+                img.section-info__wrapper__img(src=require('Images/apps_image/iOS one.png'))
+                img.section-info__wrapper__img(src=require('Images/apps_image/Android one.png'))
+            .section-info__wrapper__block__text
+                h2.section-info__wrapper__block__text-title Главный профиль
+                p.section-info__wrapper__block__text-explanation Сервис (страница), где владелец (пользователь) размещает </br> информацию о себе и своем окружении в фото </br>и видео формате.
+        .section-info__wrapper__block--reverse
+            .section-info__wrapper__block__img
+                img.section-info__wrapper__img(src=require('Images/apps_image/iOS two.png'))
+                img.section-info__wrapper__img(src=require('Images/apps_image/Android two.png'))
+            .section-info__wrapper__block__text
+                h2.section-info__wrapper__block__text-title Лента SFERA
+                p.section-info__wrapper__block__text-explanation Агрегатор контента SFERA, который будет формировать вашу</br> новостную ленту с развивающим контентом. Сервис не</br> решает за Вас, что Вам показывать. Вы увидите весь контент</br> на который подписаны, плюс лучшее в системе за</br> определенный промежуток времени.
+        .section-info__wrapper__block
+            .section-info__wrapper__block__img
+                img.section-info__wrapper__img(src=require('Images/apps_image/iOS three.png'))
+                img.section-info__wrapper__img(src=require('Images/apps_image/Android three.png'))
+            .section-info__wrapper__block__text
+                h2.section-info__wrapper__block__text-title ASAP
+                p.section-info__wrapper__block__text-explanation ASAP — мультифункциональный мессенджер, который</br> вберет в себя лучшие функции существующих </br>мессенджеров.
+        .section-info__wrapper__block--reverse
+            .section-info__wrapper__block__img
+                img.section-info__wrapper__img(src=require('Images/apps_image/iOS for.png'))
+                img.section-info__wrapper__img(src=require('Images/apps_image/Android for.png'))
+            .section-info__wrapper__block__text
+                h2.section-info__wrapper__block__text-title MeetNet
+                p.section-info__wrapper__block__text-explanation MeetNet — сервис для знакомств, синхронизированный с </br> личным профилем. Люди подбираются по более чем 50 </br> параметрам. </br></br> Такой подход позволит в будущем составить практически</br> идеальные пары.
+        .section-info__wrapper__block
+            .section-info__wrapper__block__img
+                img.section-info__wrapper__img(src=require('Images/apps_image/iOS five.png'))
+                img.section-info__wrapper__img(src=require('Images/apps_image/Android five.png'))
+            .section-info__wrapper__block__text
+                h2.section-info__wrapper__block__text-title Choose
+                p.section-info__wrapper__block__text-explanation Не знаете, что лучше? Воспользуйтесь этим сервисом и </br>выявите мнение аудитории. В будущем это будет </br>эффективным инструментом для бизнеса по проведению</br> аналитических опросов.
+        .section-info__wrapper__block--reverse
+            .section-info__wrapper__block__img
+                img.section-info__wrapper__img(src=require('Images/apps_image/iOS six.png'))
+                img.section-info__wrapper__img(src=require('Images/apps_image/Android six.png'))
+            .section-info__wrapper__block__text
+                h2.section-info__wrapper__block__text-title Black Box
+                p.section-info__wrapper__block__text-explanation Позволяет находить новое общение по геолокации и</br> беседовать на любые темы с любым пользователем. Для тех,</br> кому не хватает общения и у кого есть вопросы, на не</br> простые темы.
+        .section-info__wrapper__block
+            .section-info__wrapper__block__img
+                img.section-info__wrapper__img(src=require('Images/apps_image/iOS seven.png'))
+                img.section-info__wrapper__img(src=require('Images/apps_image/Android seven.png'))
+            .section-info__wrapper__block__text
+                h2.section-info__wrapper__block__text-title videos
+                p.section-info__wrapper__block__text-explanation Видео сервис, главное преимущество которого, </br>предоставление исключительно полезного, развивающего,</br> интересного контента
+        .section-info__wrapper__block--reverse
+            .section-info__wrapper__block__img
+                img.section-info__wrapper__img(src=require('Images/apps_image/iOS  eight.png'))
+                img.section-info__wrapper__img(src=require('Images/apps_image/Android eight.png'))
+            .section-info__wrapper__block__text
+                h2.section-info__wrapper__block__text-title JOB lite
+                p.section-info__wrapper__block__text-explanation Очень простое и понятное подприложение по поиску работы</br> или сотрудников, для простых специальностей не </br> требующих составление резюме. Прямой диалог между</br> соискателем и работодателем.
+        .section-info__wrapper__block
+            .section-info__wrapper__block__img
+                img.section-info__wrapper__img(src=require('Images/apps_image/iOS nine.png'))
+                img.section-info__wrapper__img(src=require('Images/apps_image/Android nine.png'))
+            .section-info__wrapper__block__text
+                h2.section-info__wrapper__block__text-title Find friends
+                p.section-info__wrapper__block__text-explanation Первый сервис имеющий единственной целью — поиск </br>новых друзей в реальной (офлайн) жизни.
+  .swiper-text
+      h2.swiper-text Сервисы Следующего этапа разработки
+  .swiper
+      .swiper-wrapper
+          .swiper-slide slide1
+          .swiper-slide slide1
+          .swiper-slide slide1
+          .swiper-slide slide1
+          .swiper-slide slide1
+          .swiper-slide slide1
+          .swiper-slide slide1
+          .swiper-slide slide1
+          .swiper-slide slide1
+          .swiper-slide slide1
+          .swiper-slide slide1
+          .swiper-slide slide1
+      .swiper-paginatio
+      .swiper-button-prev
+      .swiper-button-next
+      .swiper-scrollbar

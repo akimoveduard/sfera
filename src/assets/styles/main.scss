@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+// 1. Abstracts
+@import
+  'abstracts/colors',
+  'abstracts/breakpoints',
+  'abstracts/variables';
+
+// 2. Vendors
+@import
+  'vendors/normalize';
+
+// 3. Base
+@import
+  'base/fonts',
+  'base/base',
+  'base/typography',
+  'base/link';
+
+// 4. Components
+
+// 5. Layouts
+@import
+  'layouts/page',
+  'layouts/section',
+  'layouts/header',
+  'layouts/footer',
+  'layouts/contacts-list',
+  'layouts/socials-list',
+  'layouts/copyright';
