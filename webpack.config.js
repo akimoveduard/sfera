@@ -17,6 +17,7 @@ module.exports = (env, argv) => {
       news: 'src/views/pages/news/index.pug',
       startups: 'src/views/pages/startups/index.pug',
       team: 'src/views/pages/team/index.pug',
+      about: 'src/views/pages/about/index.pug',
     },
 
     output: {
