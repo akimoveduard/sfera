@@ -27,16 +27,69 @@ block content
         name: 'Карен',
         role: 'Проект-менеджер',
         image: '2',
-      }
+      },
+      {
+        name: 'Ксения',
+        role: 'Исполнительный директор',
+        image: '3',
+      },
+      {
+        name: 'Владимир',
+        role: 'CTO, Golang разработчик',
+        image: '4',
+      },
+      {
+        name: 'Карен',
+        role: 'Проект-менеджер',
+        image: '5',
+      },
+      {
+        name: 'Карен',
+        role: 'Проект-менеджер',
+        image: '6',
+      },
+      {
+        name: 'Карен',
+        role: 'Проект-менеджер',
+        image: '7',
+      },
+      {
+        name: 'Карен',
+        role: 'Проект-менеджер',
+        image: '8',
+      },
+      {
+        name: 'Карен',
+        role: 'Проект-менеджер',
+        image: '9',
+      },
+      {
+        name: 'Карен',
+        role: 'Проект-менеджер',
+        image: '10',
+      },
     ]
   
   //- Верстай ниже
-  article.team
-    section.team__photos.section 
-      .section__wrapper 
-        ul.team__list 
-          each person in team
-            li.team__item
+  //- article.team
+  //-   section.team__photos.section 
+  //-     .section__wrapper 
+  //-       ul.team__list 
+  //-         each person in team
+  //-           li.team__item
+  //-             img.team__photo(src= require("Images/team/" + person.image + ".jpg"), alt="Фото участника команды SFERA")
+  //-             p.team__person-name= person.name + " "
+  //-               span.team__person-role= person.role
+
+  .team 
+    .team__body
+      each person in team
+        .team__column
+          .block-team__item.block-team__item_b.item
+            span.item__logo
+              img
+              p.item__person-name= person.name + " "
+                span.item__person-role=person.role
+            span.item__image.ibg
               img.team__photo(src= require("Images/team/" + person.image + ".jpg"), alt="Фото участника команды SFERA")
-              p.team__person-name= person.name + " "
-                span.team__person-role= person.role
+              
