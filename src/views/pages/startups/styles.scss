@@ -42,3 +42,89 @@ margin-top: 200px;
     
 }
 
+// second page
+
+
+
+.list-container{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.list__items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list__circles{
+    display: flex;
+    flex-direction: column;
+    gap:60px;
+    margin-top: 200px;
+    
+}
+
+.list__circle{
+    background: black;
+    border-radius: 100%;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 70px;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    font-size: 36px;
+    font-weight: 600;
+    
+    
+
+}
+
+
+.text-list__list-item{
+    list-style-type: none;
+}
+
+.list__texts{
+    margin-top: 200px;
+}
+
+.list__image{
+    margin-top: 120px;
+}
+
+
+.text-one{
+    margin-top: -30px;
+    margin-bottom: 55px;
+}
+.text-two{
+    margin-bottom: 55px;
+}
+
+.text-three{
+    margin-bottom: 55px;
+}
+
+.text-four{
+    margin-bottom: 55px;
+}
+
+.number-two{
+    margin-top: 40px;
+}
+
+.number-three{
+    margin-top: 70px;
+}
+
+.number-four{
+    margin-top: 10px
+}
+
+
+// third article
+
+
+
