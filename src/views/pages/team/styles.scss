@@ -6,7 +6,7 @@
 		flex-wrap:wrap;
 	}
 	&__column {
-		flex: 0 1 16%;
+		flex: 0 1 17.29%;
 		margin: 0px 20px 40px 20px;
 		justify-content: center;
 		// &:nth-child(5){
@@ -51,6 +51,7 @@
 			font-weight: 600;
 			line-height: 17px;
 			color: #C9CED4;
+			width: 71%;
 		}
 	}
 	&__person-name {}
