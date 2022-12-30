@@ -126,5 +126,20 @@ margin-top: 200px;
 
 // third article
 
+.frame-items{
+    display: flex;
+    margin-top: 140px;
+    margin-bottom: 130px;
+    gap: 80px;
+}
 
+.frame__image{
 
+}
+
+.frame__text{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    margin-top: 20px;
+}
