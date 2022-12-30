@@ -1,4 +1,4 @@
-.lead {
+.lead__wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,11 +7,11 @@
 }
 .lead__subtitle {
   font-size: 36px;
-  line-height: 43.57px;
+  line-height: 43px;
 }
 .lead__slogan {
   font-size: 36px;
-  line-height:43.57px;
+  line-height: 43px;
   font-weight: 600;
   padding: 30px 0 0 0;
 }
@@ -81,7 +81,7 @@
   align-items: center;
   background: linear-gradient(180deg, #28282C 0%, #000000 100%);
   font-size: 24px;
-  line-height: 29.05px;
+  line-height: 29px;
   padding: 100px 70px;
 
 }
@@ -127,12 +127,12 @@
 }
 .anons__subtitle {
   font-size: 24px;
-  line-height: 29.5px;
+  line-height: 30px;
 }
 .anons__slogan__bold {
   font-weight: 600;
   font-size: 28px;
-  line-height: 33.89px;
+  line-height: 34px;
 }
 .anons__subtitle__bold {
   font-size: 36px;
@@ -143,13 +143,17 @@
   justify-content: center;
   width: 100%;
 }
-.swiper-article {
-  margin: 20px 0;
-}
 .swiper-wrapper {
   display: flex;
 }
 .swiper-slide {
   display: flex;
-  
+}
+.swiper__section {
+  margin: 30px 0;
+}
+.swiper__pause {
+  display: flex;
+  justify-content: flex-end;
+  margin:10px 100px 0 10px;
 }

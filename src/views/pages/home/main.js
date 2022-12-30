@@ -23,3 +23,7 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 });
+let swiperPause = document.querySelector('.swiper__pause')
+  swiperPause.addEventListener('click', () => {
+    swiper.autoplay = false;
+  });
