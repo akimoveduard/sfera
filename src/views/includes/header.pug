@@ -3,29 +3,68 @@ header.header.section.section_theme_dark(role="header")
     .header__links
       .header__nav
         .link-list__item__nav
-          .link-list__item__video
-            a.link.link_theme_dark.nav-list__link(href="#") 
-            img(src=require("Images/nav-menu/unsplash_f7YQo-eYHdM.svg"))
-          .link-list__item__logo
-            a.link.link_theme_dark.nav-list__link(href="#")
-            img(src=require("Images/nav-menu/Лого рабочий.svg"))  
-        ul.nav-list
-          li.link-list__item
-            a.link.link_theme_dark.nav-list__link(href="#") О проекте
-          li.contacts-list__item
-            a.link.link_theme_dark.nav-list__link(href="#") Приложение 
-          li.contacts-list__item 
-            a.link.link_theme_dark.nav-list__link(href="#") Команда 
-          li.link-list__item
-            a.link.link_theme_dark.nav-list__link(href="#") Стартап 
-          li.link-list__item
-            a.link.link_theme_dark.nav-list__link(href="#") Инвестиции
-          li.link-list__item
-            a.link.link_theme_dark.contacts-list__link(href="#") Новости
-          li.link-list__item
-            a.link.link_theme_dark.contacts-list__link(href="#") Положение
-        .link-list__item__leng
-          .link-list__item
-            a.link.link_theme_dark.contacts-list__link(href="#") 
-            img(src=require("Images/nav-menu/Language.svg"))
+          ul.nav-list
+              li.link-list__item__video
+                a.nav__link__video(href="#") 
+                img(src=require("Images/nav-menu/unsplash_f7YQo-eYHdM.svg"))
+              li.link-list__item__logo
+                a.nav__link__logo(href="#")
+                img(src=require("Images/nav-menu/Лого рабочий.svg")) 
+              li.nav__list__item
+                a.nav__link(href='#') О проекте
+                ul.nav-list-link
+                  li.drop-down-list
+                    a.link(href='#')  О проекте
+                  li.drop-down-list
+                    a.link(href='#')  О проекте
+                  li.drop-down-list
+                    a.link(href='#')  О проекте
+                  li.drop-down-list
+                    a.link(href='#') О проекте
+              li.nav__list__item
+                a.nav__link(href='#') Приложения
+                ul.nav-list-link
+                  li.drop-down-list
+                    a.link(href='#') Приложения
+                  li.drop-down-list
+                    a.link(href='#') Приложения
+              li.nav__list__item
+                a.nav__link(href='#') Скачать
+                ul.nav-list-link
+                  li.drop-down-list
+                    a.link(href='#') Скачать для Android
+                  li.drop-down-list
+                    a.link(href='#') Скачать для iOS
+              li.nav__list__item
+                a.nav__link(href='#') Новости
+                ul.nav-list-link
+                  li.drop-down-list
+                    a.link(href='#') Новости
+                  li.drop-down-list
+                    a.link(href='#') Новости
+              li.nav__list__item
+                a.nav__link(href='#') Стартапам
+                ul.nav-list-link
+                  li.drop-down-list
+                    a.link(href='#') Стартапам
+                  li.drop-down-list
+                    a.link(href='#') Стартапам
+              li.nav__list__item
+                a.nav__link(href='#') Инвестиции
+                ul.nav-list-link
+                  li.drop-down-list
+                    a.link(href='#') Инвестиции
+                  li.drop-down-list
+                    a.link(href='#') Инвестиции
+              li.nav__list__item
+                a.nav__link(href='#') Команда
+                ul.nav-list-link
+                  li.drop-down-list
+                    a.link(href='#') Команда
+                  li.drop-down-list
+                    a.link(href='#') Команда
+              li.nav__list__item 
+                .link-list__item
+                  a.link.link_theme_dark.contacts-list__link(href="#") 
+                    img(src=require("Images/nav-menu/Language.svg"))
       
