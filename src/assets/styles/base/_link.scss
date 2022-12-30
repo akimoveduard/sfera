@@ -1,8 +1,8 @@
 .link {
-  text-decoration: none;
+  color: $colorLink;
 
   &:hover {
-    opacity: 0.7;
+    opacity: 0.9;
   }
 
   &_theme {
