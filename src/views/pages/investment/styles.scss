@@ -1,0 +1,148 @@
+//!Изменить позиционирование в .section__wrapper__small
+//!добавить функцию компирования
+//!добавить переход на страницу венчурное инвестирование
+.investment_page {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+.section__wrapper {
+    background: linear-gradient(180deg, #28282C 0%, #000000 100%);
+    margin-bottom: 100px;
+    color: white;
+    height: 1080px;
+    max-width: 1920px;
+}
+.section__wrapper__small {
+    background: linear-gradient(180deg, #28282C 0%, #000000 100%);
+    margin-bottom: 100px;
+    color: white;
+    height: 760px;
+    max-width: 100%;
+}
+.investment_page{
+    display: flex;
+    .lead__container {
+        width: 950px;
+        height: 174px;
+        padding-top: 270px;
+        padding-left: 200px;
+        padding-right: 770px;
+    .lead__title {
+        width: 950px;
+        height: 174px;
+        font-weight: 300;
+        font-size: 72px;
+        line-height: 87px;
+        text-transform: uppercase;
+        }
+    .lead__subtitle {
+        width: 551px;
+        height: 192px;
+        font-size: 24px;
+        line-height: 29px;
+        }
+    }
+    .investment__phones{
+        position: absolute;
+        width: 961.25px;
+        height: 600px;
+        left: 758px;
+        top: 359px;
+        padding-top: 130px;
+        padding-right: 200.75px;
+}
+}
+.section__investment-card {
+    width: 1920px;
+    height: 760px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    .section__investment-card-img {
+    }
+    .section__card__container{
+        width: 735px;
+        height: 452px;
+        padding-right: 208.07px;
+        .link.link__card-number {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 44px;
+            font-style: normal;
+        }
+        .link.link__email {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 44px;
+            font-style: normal;
+        }
+    }
+}
+.section__investment-confirm {
+    .section__confirm {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    .section__confirm__container{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        width: 735px;
+        height: 268px;
+        padding-top: 246px;
+        padding-left: 100px;
+    .investment_logo {
+        margin-top: 303px;
+        padding-left: 1181.7px;
+    }
+    }
+}
+.section__quote {
+    height: 916px;
+    .investment_quote{
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 1.53%;
+        padding-left: 308px;
+        padding-top: 3054px;
+    }
+    .section__quote__container {
+        width: 1304px;
+        height: 656px;
+        padding-left: 308px;
+        span.subtitle__book {
+            font-weight: bold;
+        }
+    }
+    .quote {
+        padding-left: 100px;
+        padding-top: 8px;
+    }
+}
+.section__stop-doing {
+    .section__stop {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .section__stop-doing__container{
+    }
+}
+.section__purpose {
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-transform: uppercase;
+}

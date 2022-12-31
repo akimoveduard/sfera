@@ -15,3 +15,59 @@ append style
   link(href=require('./styles.scss') rel='stylesheet')
 
 block content
+  page.page.investment_page
+    section.section.section__investment
+      .section__wrapper
+        .lead__container
+          h1.lead__title Инвестиции ускоряют нашу работу
+          .lead__subtitle
+            p.lead__subtitle__item На данный момент финансирование проекта осуществляется засчёт собственных средств и средств инвесторов.
+            p.lead__subtitle__item Все привлекаемые инвестиции идут непосредственно на оплату работы наших программистов.
+        img.investment__phones(src=require('/src/assets/images/investment/investment_phones.png'))
+    section.section__investment-card
+      .section__investment-card-img
+      img.card-img(src=require('/src/assets/images/investment/investment_card.png'))
+      .section__card__container
+        ol.card-list
+          li.card-list__item Скопируйте номер карты и отправьте желаемую сумму:
+          p.link.link__card-number(onclick='CopyCard()') 4584-4328-3958-7574
+          li.card-list__item Отправьте E-mail, указав сумму перевода. Обратным письмом мы подтвердим отправленную вами сумму и привязку её к вашему E-mail.
+          p.link.link__email(onclick='CopyEmail()') invest@sfera.zone
+        p.card-action__text Осуществляя перевод, вы подтверждаете, что четко понимаете основы и понятия венчурного инвестирования и принципов работы стартапа, а также все риски, связанные с этим.
+        a.link.venture__investment(href='') Что такое венчурное инвестирование >
+    section.section__investment-confirm
+      .section__wrapper__small
+        .section__confirm
+          .sectiom__confirm2
+            img.investment_logo(src=require('/src/assets/images/investment/investment_logo.png'))
+          .section__confirm__container
+            p.confirm__subtitle На данном этапе мы не можем четко сказать, как и когда инвестор получит документальное подтверждение. Но это точно произойдёт. Возможны два варианта:
+            ul.confirm__subtitle
+              li.confirm__subtitle__item подписание опционов с последующим переводом в акции;
+              li.confirm__subtitle__item предоставление токенов.
+            p.confirm__subtitle Наша главная цель в работе с инвесторами — это Х100 для инвесторов.
+    section.section__quote
+      .section__quote__container
+        h2.quote__title Что такое венчурные инвестиции
+        p.quote__subtitle
+          |Цитата из книги:
+          br
+          span.subtitle__book|«Как вдохнуть в бизнес новую жизнь. PIXAR» Лоуренс Леви
+          p.quote Стартапы держались вместе засчет возможности для их основателей и сотрудников делить трофеи. Это было одной из самых главных побудительных мер присоединиться к крайне рискованному предприятию, а не к более стабильной компании. Механизмом участия в успехе стартапа был опцион на покупку акций — бумажного обязательства, ставшего валютой Кремниевой долины. Опционы на акции превратили Кремневую долину в современный аналог золотой лихорадки.
+          p.quote Опцион на акции дает сотруднику возможность в будущем приобретать акции в компании. Его ценность состоит в том, что сотрудник не должен платить за акции сразу, но цена, которую он заплатит в свое время, устанавливается в тот момент, когда сотрудник получает этот опцион, обычно тогда, когда он или она приходит на работу в компанию. Если компания становится очень успешной после того, как человек пришел туда работать, ценность акций может вырасти до астрономических сумм, но сотрудник заплатит именно ту сумму, которая была установлена в момент получения опциона. Остальное — его прибыль. Например, если акция компании на момент поступления человека стоит 1 доллар за штуку и если он получает опцион на покупку тысячи акций, пять лет спустя, если акции стоят по 100 долларов за штуку, человек все равно заплатит за них по 1 доллару. Он или она получит 99 долларов прибыли за каждую акцию, или 99 тысяч долларов прибыли. Именно так Кремниевая долина рождает на свет новых миллионеров и миллиардеров.
+        img.investment_quote(src=require('/src/assets/images/investment/quote.png'))
+    section.section__stop-doing
+      .section__wrapper__small
+        .section__stop
+          .section__stop2
+            img.investment_logo(src=require('/src/assets/images/investment/investment_logo.png'))
+          .section__stop-doing__container
+            h2.stop-doing__title Не делайте этого, если
+            ul.stop-doing-list
+              li.stop-doing-list__item Считаете, что это обман.
+              li.stop-doing-list__item Не верите в проект.
+              li.stop-doing-list__item Выделяемая сумма для вас значима.
+              li.stop-doing-list__item Вы не понимаете основ инвестирования в стартапы.
+            p.stop-doing__subtitle Гарантией выполнения наших обязательств является репутация компании сейчас и в будущем.
+    section.section__purpose
+      h2.purpose__title Наша главная цель в работе с инвесторами — это Х100 для инвесторов
