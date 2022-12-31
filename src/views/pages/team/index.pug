@@ -230,7 +230,10 @@ block content
     .team__body
       each person in team
         .team__column
-          .block-team__item.block-team__item_b.item
+          a(href="#").block-team__item.block-team__item_b.item
+            span.logo__item
+              img(src= require("Images/logo/Лого_рабочий1.png")).logo__image
+              span Член команды
             span.item__logo
               img
               p.item__person-name= person.name + " "
