@@ -1,17 +1,14 @@
 .footer {
-  padding: 100px 0 50px 0;
+  padding: 119px 0 129px 0;
 
   &__container {
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 50px;
-  }
-
-  &__links {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 1px solid red;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 1462px;
+    margin: 0 auto;
+    padding: 0 50px;
   }
 
   &__title {
@@ -19,5 +16,53 @@
     font-size: 36px;
     font-weight: $fontWeightSemibold;
     line-height: $lineHeightExtensive;
+  }
+
+  &__contacts, &__social-links {
+    width: 492px;
+    margin-right: 300px;
+  }
+
+  &__download-links, &__copyright {
+    width: 1fr;
+  }
+
+  &__contacts, &__download-links {
+    margin-bottom: 115px;
+  }
+
+  &__social-links {
+    margin-bottom: 50px;
+  }
+
+  &__download-links-list {
+    list-style: none;
+    display: flex;
+    margin: 20px 0 0;
+    padding: 0;
+
+    &-item {
+      margin: 0 30px 0 0;
+      padding: 0;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__copyright {
+
+    &-text {
+      color: $colorGrey;
+      font-size: 14px;
+      line-height: 17px;
+      margin: 0 0 20px;
+      padding: 0;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
   }
 }

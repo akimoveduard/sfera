@@ -1,2 +1,27 @@
-header
-  p This is header
+header.header.section.section_theme_dark(role="header")
+  .header__container.section__wrapper
+    .logo
+      a.button.button_form_circle.button_theme_image.link_hide-text(href="")
+        span.button__play-video Просмотреть видео о SFERA
+      a.logo__link(href="#")
+        img.logo__image(src=require("Images/sfera-logo.svg"))
+    nav.main-nav
+      ul.main-nav__list
+        li.main-nav__item.main-nav__dropdown-menu.dropdown-menu
+          a.main-nav__link(href="/about.html") О проекте
+          .dropdown-menu__content.main-nav__submenu
+            p I am dropdown-menu content
+        li.main-nav__item 
+          a.main-nav__link(href="#") Приложения
+        li.main-nav__item 
+          a.main-nav__link(href="#") Скачать
+        li.main-nav__item 
+          a.main-nav__link(href="#") Новости
+        li.main-nav__item 
+          a.main-nav__link(href="#") Стартапам
+        li.main-nav__item 
+          a.main-nav__link(href="#") Инвестиции
+        li.main-nav__item 
+          a.main-nav__link(href="#") Команда
+      .langs
+        span RU

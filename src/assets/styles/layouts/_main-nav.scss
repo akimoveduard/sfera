@@ -1,0 +1,35 @@
+.main-nav {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: $fontWeightMedium;
+    margin: 0;
+    padding: 20px 20px 18px 20px;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      border-bottom: 2px solid;
+      border-image: linear-gradient(141.95deg, #FF00F5 14.92%, #00F0FF 84.27%) 40;
+    }
+  }
+
+  &__link {
+    color: white;
+    text-decoration: none;
+  }
+
+  &__dropdown-menu {
+    padding-right: 30px;
+  }
+}

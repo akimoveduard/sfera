@@ -15,16 +15,19 @@
   'base/fonts',
   'base/base',
   'base/typography',
-  'base/link';
+  'base/link',
+  'base/button';
 
 // 4. Components
-
+@import
+  'components/dropdown-menu';
 // 5. Layouts
 @import
   'layouts/page',
   'layouts/section',
   'layouts/header',
+  'layouts/logo',
+  'layouts/main-nav',
   'layouts/footer',
   'layouts/contacts-list',
-  'layouts/socials-list',
-  'layouts/copyright';
+  'layouts/socials-list';

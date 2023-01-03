@@ -2,6 +2,7 @@
 $fontFamily: 'Inter';
 $fontWeightLight: 300;
 $fontWeightNormal: 400;
+$fontWeightMedium: 500;
 $fontWeightSemibold: 600;
 
 /* TYPOGRAPHIC */
@@ -9,3 +10,9 @@ $fontSizeCommon: 24px;
 
 $lineHeightCommon: 29px;
 $lineHeightExtensive: 44px;
+
+/* BUTTON */
+$buttonFontWeight: 400;
+$buttonFontSize: 24px;
+$buttonTextLineHeight: 29px;
+$buttonBorderRadius: 24px;
