@@ -23,8 +23,11 @@ block content
               <br> развития и пользы вашей жизни
             p.lead__slogan Изменим мир вместе
             .lead__button
-              button.download__button__android Скачать на Android
-              button.download__button Скачать на OIS
+              ul.lead__download-links-list
+                li.lead__download-links-list-item
+                  a.lead__download-link.button.button_theme_dark.button_type_android Скачать на Android 
+                li.lead__download-links-list-item
+                  a.lead__download-link.button.button_theme_dark.button_type_ios Скачать на iOS
           .lead__image 
               .lead__image__image 
                 img(src=require("Images/home/foto main.png"))
@@ -93,7 +96,9 @@ block content
                 p.anons__subtitle SFERA обладает функционалом мессенджера, социальной сети, видеосервиса, сервиса по поиску работы и деловым контактам, сервис знакомств и многое другое, что уже есть сейчас и будет в будущем. 
                 p.anons__subtitle Каждый сервис в системе, либо полностью уникален, либо имеет отличительные особенности в сравнении с аналогами.
                 p.anons__slogan__bold Подключите и вы свой сервис к цифровой экосистеме
-                button Хочу в SFERA       
+                .lead__download-links-list
+                  .lead__download-links-list-item
+                    a.lead__download-link.button.button_theme_dark.button_type Хочу в SFERA        
             li.anons-list__item
               .anons__content 
                 img(src=require("Images/home/лого рабочий anons.svg"))
@@ -105,8 +110,10 @@ block content
                   li подписание опционов с последующим переводом в акции;
                   li предоставление токенов.
                 p.anons__subtitle Наша главная цель в работе с инвесторами — это Х100 для инвесторов.
-                p.anons__slogan__bold Инвестиции ускоряют нашу работу 
-                button Хочу инвестировать в SFERA
+                p.anons__slogan__bold Инвестиции ускоряют нашу работу
+                .lead__download-links-list
+                  .lead__download-links-list-item
+                    a.lead__download-link.button.button_theme_dark.button_type Хочу инвестировать в SFERA       
       section.swiper__section
         .swiper
           .swiper-wrapper
