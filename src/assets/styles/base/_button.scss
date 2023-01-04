@@ -1,0 +1,112 @@
+.button {
+  display: block;
+  font-size: $buttonFontSize;
+  font-weight: $buttonFontWeight;
+  line-height: $buttonTextLineHeight;
+  position: relative;
+  width: max-content;
+  height: max-content;
+  padding: 20px 40px 20px 40px;
+  background-color: transparent;
+  z-index: 10;
+  filter: drop-shadow(0px -4px 4px rgba(255, 0, 245, 0.25)) drop-shadow(0px 4px 4px rgba(34, 218, 229, 0.25));
+  
+  &::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(141.95deg, #FF00F5 14.92%, #00F0FF 84.27%);
+    border-radius: 24px;
+    z-index: -10;
+  }
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    left: 0;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    z-index: -2;
+    margin: 4px;
+    border-radius: 20px;    
+  }
+
+  &_form_circle {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+      border-radius: 100px;
+    }
+
+    &::after {
+      border-radius: 100px;
+    }
+  }
+
+  &_theme {
+    position: relative;
+
+    &_light {
+      color: black;
+    }
+
+    &_light::after {
+      background: white;
+    }
+
+    &_dark {
+      color: white;
+    }
+
+    &_dark::after {
+      background: black;
+    }
+
+    &_image {
+
+      &::after {
+        background-image: url("../../images/buttons/bg_space.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &_type {
+
+    &_ios, &_android {
+      padding-left: 78px;
+    }
+    
+    &_ios::after, &_android::after {
+      position: absolute;
+      z-index: -1;
+      background-image: url('../../images/buttons/button-image.svg');
+      background-repeat: no-repeat;
+      background-position: 34px center;
+      background-size: 30px;
+    }
+  }
+
+  &__play-video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../images/buttons/button-play.svg");
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position: 23px center;
+  }
+}

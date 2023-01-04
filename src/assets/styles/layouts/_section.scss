@@ -13,3 +13,13 @@
     }
   }
 }
+
+@media screen and (max-width: $breakpoint_xxl) {
+  
+  .section {
+    &__wrapper {
+      padding: 0 50px;
+    }
+  }
+
+}
