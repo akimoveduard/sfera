@@ -41,6 +41,9 @@
     width: 60px;
     height: 60px;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &::before {
       border-radius: 100px;

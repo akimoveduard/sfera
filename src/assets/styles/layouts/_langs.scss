@@ -1,0 +1,32 @@
+.langs {
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    margin: 20px 0 0;
+    padding: 0;
+    
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  &__link {
+    font-size: 22px;
+    line-height: 27px;
+    text-decoration: none;
+  }
+
+  &__submenu {
+    padding-top: 20px;
+  }
+
+  &__dropdown-menu::after {
+    display: none;
+  }
+  
+}
