@@ -1,1 +1,0 @@
-{"version":3,"file":"assets/js/main.1.d52c2925.js","mappings":"AAAAA,QAAQC,IAAI","sources":["webpack://sfera-zone/./src/views/pages/home/main.js"],"sourcesContent":["console.log('\\n>> Home page');\r\n"],"names":["console","log"],"sourceRoot":""}
