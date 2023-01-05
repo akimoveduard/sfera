@@ -1,13 +1,16 @@
 .link {
-  text-decoration: none;
 
   &:hover {
-    opacity: 0.7;
+    opacity: 0.8;
+  }
+
+  &_hide-text {
+    text-indent: -999999px;
   }
 
   &_theme {
     &_dark {
-      color: white;
+      color: $colorGrey;
     }
   }
 }

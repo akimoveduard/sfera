@@ -1,23 +1,3 @@
-@use '../../../assets/styles/abstracts/breakpoints' as breakpoints;
-
-@media screen and  (max-width: breakpoints.$breakpoint_xxl) {
-    .image {
-      object-fit: contain;
-    }
-    .lead__title {
-      font-size: 48px;
-      line-height: 58px;
-      font-weight: 300;
-    }
-    .lead__subtitle {
-      font-size: 22px;
-      line-height: 26px;
-      font-weight: 400;
-    }
-    .lead__image__faq {
-      display: none;
-    }
-}
 .lead__wrapper {
   display: flex;
   align-items: center;
@@ -71,7 +51,6 @@
     }
   }
 }
-
 .lead-list__item {
   display: flex;
   align-items: center;
@@ -92,9 +71,8 @@
 .lead__image__faq {
   position: absolute;
   right: 100px;
-  top: 640px;
+  top: 750px;
 }
-
 .description {
   margin: 0 200px 0 200px;
 }
@@ -121,11 +99,14 @@
   display: flex;
   align-items: center;
 }
-
+.apps__wrapper {
+  margin: o auto;
+}
 .apps-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
+  row-gap: 20px;
   justify-content: center;
   color: white;
 }
@@ -174,8 +155,7 @@
 .anons-list {
   display: flex;
   flex-direction: column;
-  list-style: none;
-  
+  list-style: none; 
 }
 .anons-list__item {
   display: flex;
@@ -224,7 +204,7 @@
 .swiper__pause {
   display: flex;
   justify-content: flex-end;
-  margin:10px 100px 0 10px;
+  margin: 10px 100px 0 10px;
 }
 ///button
 .button {
@@ -298,9 +278,6 @@
     &_dark::after {
       background: black;
     }
-    &_white::after {
-      background: rgb(249, 247, 247);
-    }
     &_image {
 
       &::after {
@@ -326,7 +303,168 @@
       background-position: 34px center;
       background-size: 30px;
     }
+  } 
+}
+// @use '../../../assets/styles/abstracts/breakpoints' as breakpoints;
+
+// @media screen and  (max-width: breakpoints.$breakpoint_xl) {
+@media (max-width: 1600px) {
+  .lead__image__faq {
+    right: 60px;
+    top: 760px;
+  }
+  .description {
+    margin: 0 auto;
+  }
+  .description__line {
+    width: 5%;
+  }
+  .anons {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1440px) {
+  .lead__image__faq {
+    right: 30px;
+    top: 760px;
+  }
+  .description {
+    margin: 0 auto;
+  }
+  .description__line {
+    width: 5%;
+  }
+  .anons {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1240px) {
+  .lead__image__faq {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .image {
+    object-fit: contain;
+    width: 100%;
+  }
+  .image__svg {
+    width: 245px;
+  }
+  .lead__wrapper {
+    margin-bottom: 20px;
+  }
+  .lead__title {
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 300;
+    max-width: 300px;
+    margin: 90px 0 0 0;
+  }
+  .lead__subtitle {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    max-width: 300px;
+  }
+  .lead__slogan {
+    font-size: 28px;
+    line-height: 33px;
+    font-weight: 600;
+    max-width: 300px;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+  .lead__image {
+    position: absolute;
+    right: 20px;
+    top: 140px;
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .lead__button {
+    margin-bottom: 30px;
+  }
+  .description-text {
+    margin: 40px 0 80px 0;
+  }
+  .description__content {
+    padding: 0 50px;
+  }
+  .description__svg__logo {
+    width: 134px;
+    margin:0 20px 130px 0;
+    padding-left: 60px;
+  }
+  .description__svg {
+    width: 245px;
+  }
+  .description__image {
+    max-width: 300px;
+  }
+  .description__image__image {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    margin-top: 120px;
+  }
+  .description__subtitle {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 600;
+    margin: 5px 0;
+  }
+  .description__line {
+    width: 11%;
+    border: 1px solid grey;
+    margin: 10px 0;
+  }
+  .apps-list__item {
+    padding: 0 90px;
+  }
+  .anons__content {
+    padding: 10px;
+    margin-right: 30px;
+  }
+  .apps__title,
+  .anons__subtitle__bold {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 600;
+  }
+  .apps__subtitle,
+  .anons__subtitle {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+  }
+  .apps__link,
+  .anons__slogan__bold {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+  }
+  .anons-list__item {
+    margin: 20px 0;
+    padding: 20px
+  }
+  .anons__list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+  }
+  .button {
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 400;
+  }
+  .swiper {
+    width: 760px;
+    height: 315px;
   }
 
-  
 }
