@@ -1,0 +1,548 @@
+.card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-left: 200px;
+	margin-top: -50px;
+}
+.card-block {
+	cursor: pointer;
+	width: 300px;
+	height: 760px;
+	margin-right: 261px;
+	margin-bottom: 40px;
+	perspective: 1000px;
+}
+.product-inner {
+	transition: transform 1.2s linear;
+	position: relative;
+	width: 100%;
+	height: 75%;
+	transform-style: preserve-3d;
+}
+
+.card-block-botton {
+	position: relative;
+	margin-top: 40px;
+	bottom: -20px;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.card-block-top {
+	display: block;
+	font-size: 24px;
+	line-height: 30px;
+	margin: 10px auto;
+	border: none;
+	padding: 8px;
+	color: #ad1aaf;
+	background: rgba(255, 255, 255, 0.08);
+	border-radius: 3px;
+}
+.card-3d {
+	perspective: 1000px;
+	cursor: pointer;
+	width: 296px;
+	height: 600px;
+}
+
+.product-front {
+	position: absolute;
+	width: 76%;
+	left: -5px;
+	border-radius: 35px;
+	
+	transform: translateZ(7.8px);
+}
+.product-back {
+	transition: transform 1.2s linear;
+	border-radius: 35px;
+	right: -44px;
+	width: 64%;
+	position: relative;
+	height: 300px;
+	transform: translateZ(-7.8px);
+}
+
+.left-side {
+	width: 15px;
+	height: 100%;
+	background: #121212;
+	transform: rotateY(90deg);
+	margin-top: 300px;
+	position: relative;
+	margin-left: -5px;
+	bottom: 585px;
+	-webkit-border-radius: 20px;
+}
+
+.product-inner:hover {
+	transform: rotateY(180deg);
+	transition: transform 1.2s linear;
+}
+
+.back {
+	position: relative;
+	width: 300px;
+	height: 600px;
+	background-image: url(../image/1920/Android\ -1.png);
+	background-repeat: no-repeat;
+	transform: rotateY(180deg);
+	left: -47px;
+}
+.front {
+	background-image: url(../image/1920/iOS\ -\ 1\ .png);
+	width: 300px;
+	height: 600px;
+	background-repeat: no-repeat;
+}
+.back-two {
+	position: relative;
+	width: 300px;
+	height: 600px;
+	background-image: url(../image/1920/Android-2.png);
+	background-repeat: no-repeat;
+	transform: rotateY(180deg);
+	left: -47px;
+}
+.front-two {
+	width: 300px;
+	height: 600px;
+	background-image: url(../image/1920/iOS\ -2.png);
+	background-repeat: no-repeat;
+}
+.back-three {
+	position: relative;
+	left: -47px;
+	width: 300px;
+	height: 600px;
+	background-image: url(../image/1920/Android-3.png);
+	background-repeat: no-repeat;
+	transform: rotateY(180deg);
+}
+.front-three {
+	width: 300px;
+	height: 600px;
+	background-image: url(../image/1920/iOS\ -3.png);
+	background-repeat: no-repeat;
+}
+.back-four {
+	position: relative;
+	left: -47px;
+	width: 300px;
+	height: 600px;
+	background-image: url(../image/1920/Android-4.png);
+	background-repeat: no-repeat;
+	transform: rotateY(180deg);
+}
+.front-four {
+	width: 300px;
+	height: 600px;
+	background-image: url(../image/1920/iOS\ -4.png);
+	background-repeat: no-repeat;
+}
+.back-five {
+	position: relative;
+	left: -47px;
+	width: 300px;
+	height: 600px;
+	background-image: url(../image/1920/Android-5.png);
+	background-repeat: no-repeat;
+	transform: rotateY(180deg);
+}
+.front-five {
+	width: 300px;
+	height: 600px;
+	background-image: url(../image/1920/iOS\ -5.png);
+	background-repeat: no-repeat;
+}
+.back-six {
+	position: relative;
+	left: -47px;
+	width: 300px;
+	height: 600px;
+	background-image: url(../image/1920/Android-6.png);
+	background-repeat: no-repeat;
+	transform: rotateY(180deg);
+}
+.front-six {
+	width: 300px;
+	height: 600px;
+	background-image: url(../image/1920/iOS\ -6.png);
+	background-repeat: no-repeat;
+}
+.back-seven {
+	position: relative;
+	left: -47px;
+	width: 300px;
+	height: 600px;
+	background-image: url(../image/1920/Android-7.png);
+	background-repeat: no-repeat;
+	transform: rotateY(180deg);
+}
+.front-seven {
+	width: 300px;
+	height: 600px;
+	background-image: url(../image/1920/iOS\ -7.png);
+	background-repeat: no-repeat;
+}
+.back-eight {
+	position: relative;
+	left: -47px;
+	width: 300px;
+	height: 600px;
+	background-image: url(../image/1920/Android-8.png);
+	background-repeat: no-repeat;
+	transform: rotateY(180deg);
+}
+.front-eight {
+	width: 300px;
+	height: 600px;
+	background-image: url(../image/1920/iOS\ -8.png);
+	background-repeat: no-repeat;
+}
+.back-nine {
+	position: relative;
+	left: -47px;
+	width: 300px;
+	height: 600px;
+	background-image: url(../image/1920/Android-9.png);
+	background-repeat: no-repeat;
+	transform: rotateY(180deg);
+}
+.front-nine {
+	width: 300px;
+	height: 600px;
+	background-image: url(../image/1920/iOS\ -9.png);
+	background-repeat: no-repeat;
+}
+@media screen and (max-width: 1440px) {
+	.card {
+		margin: 30px -110px 60px 60px;
+	 }
+	 .card-block {
+		margin-right: 148px;
+		margin-bottom: 30px;
+	 }
+	 .left-side {
+		height: 100%;
+		margin-top: 295px
+	}
+	.card-block-botton{
+		bottom: -10px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.card {
+		margin: 10px 10px 0px 20px;
+		}
+		.card-block {
+		  margin-right: 7px;
+		}
+		.card-block-botton{
+			margin-top: 50px;
+		}
+		.card-block:last-child{
+		 margin-top: 30px;
+		}
+		.left-side {
+			height: 100%;
+			margin-top: 300px
+		}
+}
+@media screen and (max-width: 375px) {
+	.card,
+	.card-block {
+		margin: 0 0 0;
+	}
+
+	.card-block-top {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.card-block-botton {
+		width: 100%;
+		margin-top: 0px;
+    font-size: 10px;
+    line-height: 12px;
+	}
+	.card-block {
+		width: 150px;
+		height: 400px;
+	}
+	.left-side {
+		width: 5px !important;
+		height: 285px !important;
+		position: relative;
+		bottom: 587px !important;
+	}
+	.product-front {
+		position: absolute;
+		transform: translateZ(2px) !important;
+	}
+	.product-back {
+		position: relative;
+		transform: translateZ(-3px) !important;
+	}
+	.product-inner:hover {
+		transform: rotateY(180deg);
+		transition: transform 1.2s linear;
+	}
+	.back {
+		width: 150px;
+		height: 300px;
+		background-image: url(../image/375/1-Android.png);
+	}
+	.front {
+		position: relative;
+		left: 1px;
+		width: 150px;
+		height: 300px;
+		background-image: url(../image/375/1-iOS.png);
+	}
+	.back-two {
+		width: 150px;
+		height: 300px;
+		background-image: url(../image/375/2-Android.png);
+	}
+	.front-two {
+		position: relative;
+		left: 1px;
+		width: 150px;
+		height: 300px;
+		background-image: url(../image/375/2-iOS.png);
+	}
+	.back-three {
+		width: 150px;
+		height: 300px;
+		background-image: url(../image/375/3-Android.png);
+	}
+	.front-three {
+		position: relative;
+		left: 1px;
+		width: 150px;
+		height: 300px;
+		background-image: url(../image/375/3-iOS.png);
+	}
+	.back-four {
+		width: 150px;
+		height: 300px;
+		background-image: url(../image/375/4-Android.png);
+	}
+	.front-four {
+		position: relative;
+		left: 1px;
+		width: 150px;
+		height: 300px;
+		background-image: url(../image/375/4-iOS.png);
+	}
+	.back-five {
+		width: 150px;
+		height: 300px;
+		background-image: url(../image/375/5-Android.png);
+	}
+	.front-five {
+		position: relative;
+		left: 1px;
+		width: 150px;
+		height: 300px;
+		background-image: url(../image/375/5-iOS.png);
+	}
+	.back-six {
+		width: 150px;
+		height: 300px;
+		background-image: url(../image/375/6-Android.png);
+	}
+	.front-six {
+		position: relative;
+		left: 1px;
+		width: 150px;
+		height: 300px;
+		background-image: url(../image/375/6-iOS.png);
+	}
+	.back-seven {
+		width: 150px;
+		height: 300px;
+		background-image: url(../image/375/7-Android.png);
+	}
+	.front-seven {
+		position: relative;
+		left: 1px;
+		width: 150px;
+		height: 300px;
+		background-image: url(../image/375/7-iOS.png);
+	}
+	.back-eight {
+		width: 150px;
+		height: 300px;
+		background-image: url(../image/375/8-Android.png);
+	}
+	.front-eight {
+		position: relative;
+		left: 1px;
+		width: 150px;
+		height: 300px;
+		background-image: url(../image/375/8-iOS.png);
+	}
+	.back-nine {
+		width: 150px;
+		height: 300px;
+		background-image: url(../image/375/9-Android.png);
+	}
+	.front-nine {
+		position: relative;
+		left: 1px;
+		width: 150px;
+		height: 300px;
+		background-image: url(../image/375/9-iOS.png);
+	}
+}
+@media screen and (max-width: 320px) {
+	.card,
+	.card-block {
+		margin: 0 0 0;
+	}
+	.card-block:last-child{
+		margin-top: 0px;
+	  }
+	.card-block-top {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.card-block-botton {
+		margin: 115px 0px 0px 5px !important;
+		font-size: 10px;
+		line-height: 12px;
+		width: 100%;
+		margin-top: 0px !important;
+	}
+	.card-block {
+		padding: 5px 0px;
+		width: 150px;
+		height: 400px;
+	}
+
+	.product-inner {
+		justify-content: center;
+		margin-left: 10px;
+		height: 70%;
+	}
+
+	.left-side {
+		width: 5px !important;
+		height: 260px !important;
+		position: relative;
+		bottom: 590px !important;
+		margin-top: 325px;
+	}
+	.product-front {
+		position: absolute;
+		transform: translateZ(2px) !important;
+	}
+	.product-back {
+		position: relative;
+		height: 265px;
+		transform: translateZ(-3px) !important;
+	}
+	.product-inner:hover {
+		transform: rotateY(180deg);
+		transition: transform 1.2s linear;
+	}
+	.card-block {
+		width: 140px;
+		height: 365px;
+	}
+	.back {
+		width: 132px;
+		height: 261px;
+		background-image: url(../image/320/1-Android.png);
+	}
+	.front {
+		width: 150px;
+		height: 300px;
+		background-image: url(../image/320/1-iOS.png);
+	}
+	.back-two {
+		width: 132px;
+		height: 261px;
+		background-image: url(../image/320/2-Android.png);
+	}
+	.front-two {
+		width: 132px;
+		height: 261px;
+		background-image: url(../image/320/2-iOS.png);
+	}
+	.back-three {
+		width: 132px;
+		height: 261px;
+		background-image: url(../image/320/3-Android.png);
+	}
+	.front-three {
+		width: 132px;
+		height: 261px;
+		background-image: url(../image/320/3-iOS.png);
+	}
+	.back-four {
+		width: 132px;
+		height: 261px;
+		background-image: url(../image/320/4-Android.png);
+	}
+	.front-four {
+		width: 132px;
+		height: 261px;
+		background-image: url(../image/320/4-iOS.png);
+	}
+	.back-five {
+		width: 132px;
+		height: 261px;
+		background-image: url(../image/320/5-Android.png);
+	}
+	.front-five {
+		width: 132px;
+		height: 261px;
+		background-image: url(../image/320/5-iOS.png);
+	}
+	.back-six {
+		width: 132px;
+		height: 261px;
+		background-image: url(../image/320/6-Android.png);
+	}
+	.front-six {
+		width: 132px;
+		height: 261px;
+		background-image: url(../image/320/6-iOS.png);
+	}
+	.back-seven {
+		width: 132px;
+		height: 261px;
+		background-image: url(../image/320/7-Android.png);
+	}
+	.front-seven {
+		width: 132px;
+		height: 261px;
+		background-image: url(../image/320/7-iOS.png);
+	}
+	.back-eight {
+		width: 132px;
+		height: 261px;
+		background-image: url(../image/320/8-Android.png);
+	}
+	.front-eight {
+		width: 132px;
+		height: 261px;
+		background-image: url(../image/320/8-iOS.png);
+	}
+	.back-nine {
+		width: 132px;
+		height: 260x;
+		background-image: url(../image/320/9-Android.png);
+	}
+	.front-nine {
+		width: 132px;
+		height: 260px;
+		background-image: url(../image/320/9-iOS.png);
+	}
+}
