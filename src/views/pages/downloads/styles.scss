@@ -1,33 +1,70 @@
 $base-color: hsl(326, 37%, 96%);
 $background:linear-gradient(180deg, #28282C 0%, #000000 100%);
+
+// .lead__container {
+//   display: grid;
+//   grid-template-rows: 400px 300px;
+//   grid-template-columns: 1fr 1fr;
+//   align-items: center;
+//   justify-content: center;
+// }
+// .lead__container__text {
+//   color: white;
+// }
+// .lead__image__ios {
+//   margin-right: 50px;
+// }
+// .lead__image {
+//   grid-row: 1 / -1;
+// 	grid-column: 2;
+//   justify-self: end;
+// }
 .lead {
-  background: #000000;
+  background: $background;
 }
 .lead__container {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
+  background: $background;
+  color:$base-color;
+  padding: 130px 0;
 }
-.lead__conteiner__text {
-  color: white;
+.lead__button {
+  margin-top: 100px;
 }
-.lead__image__ios {
-  margin-right: 50px;
+.lead__download-links-list {
+  list-style: none;
+}
+.button_type_android {
+  margin-right: 40px;
+}
+.lead__images {
+  display: flex;
 }
 .lead__image {
-  grid-row: 1 / -1;
-	grid-column: 2;
-  justify-self: end;
+  object-fit: contain;
+  width: 100%;
+}
+.lead__image__ios {
+  padding-right: 40px; 
+}
+.lead__title {
+  font-size: 74px;
+  line-height: 87px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.lead__subtitle {
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 400;
 }
 .lead__download-links-list {
   display: flex;
   padding: 0;
 }
-.lead__download-link {
-  margin-right: 40px;
-}
+
+
 .button {
   display: block;
   font-size: 24px;
@@ -127,51 +164,8 @@ $background:linear-gradient(180deg, #28282C 0%, #000000 100%);
   } 
 }
 
-// .lead {
-//   margin: 0 auto;
-// }
-// .lead__container {
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: center;
-//   background: $background;
-//   color:$base-color ;
-//   padding: 70px 0;
-// }
-// .lead__conteiner__text {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: flex-start;
-//   margin-right: 150px;
-// }
-.lead__title {
-  font-size: 74px;
-  line-height: 87px;
-  font-weight: 300;
-  margin-bottom: 10px;
-}
-.lead__subtitle {
-  font-size: 36px;
-  line-height: 43px;
-  font-weight: 400;
-}
-// .lead__image {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-// .lead__image__ios,
-// .lead__image__android {
-//   object-fit: contain;
-//   width: 100%;
-//   padding-right: 40px; 
-// }
 
-// .lead__button {
-//   margin: 0 5px;
-// }
-// // @use '../../../assets/styles/abstracts/breakpoints' as breakpoints;
+// @use '../../../assets/styles/abstracts/breakpoints' as breakpoints;
 
 // @media (max-width: 1600px) {
 //   .lead__conteiner__text {

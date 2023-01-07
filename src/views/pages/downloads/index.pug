@@ -18,17 +18,20 @@ block content
   section.lead
     .section__wrapper
       .lead__container
-        .lead__conteiner__text
+        .lead__container__text
           h1.lead__title  СКАЧАЙТЕ
             <br> ПРИЛОЖЕНИЕ SFERA
           p.lead__subtitle Присоединяйтесь к нам, давайте
-            <br> изменим мир вместе. 
-        .lead__image
-            img.lead__image__ios(src=require("Images/downloads/ios.png"))
-            img.lead__image__android(src=require("Images/downloads/android.png"))
-        .lead__button
+            <br> изменим мир вместе.
+          .lead__button
             ul.lead__download-links-list
               li.lead__download-links-list-item
                 a.lead__download-link.button.button_theme_dark.button_type_android Скачать на Android 
               li.lead__download-links-list-item
                 a.lead__download-link.button.button_theme_dark.button_type_ios Скачать на iOS
+        .lead__images
+          .lead__image__ios
+            img.lead__image(src=require("Images/downloads/ios.png"))
+          .lead__image__android
+            img.lead__image(src=require("Images/downloads/android.png"))
+        
