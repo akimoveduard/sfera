@@ -1,3 +1,6 @@
+@use '../../../assets/styles/abstracts/breakpoints' as breakpoints;
+
+
 @mixin anim($time,$delay){transition: all $time ease $delay;}
 
 
@@ -7,14 +10,26 @@
 		margin-left: 212px;
 		margin-right: 212px;
 		flex-wrap:wrap;
+		@media (max-width: breakpoints.$breakpoint_md) {
+			margin-left: 32px;
+			margin-right: 32px;
+			&:last-child{
+				align-items: center;
+				justify-content: center;
+			}
+		}
 	}
 	&__column {
-		flex: 0 1 17.29%;
-		margin: 0px 20px 40px 20px;
+		flex: 0 1 auto;
+		margin: 0px auto 40px auto;
 		justify-content: center;
 		// &:nth-child(5){
 		// 	margin-right: 0;
 		// }
+		@media (max-width: breakpoints.$breakpoint_md){
+			flex: 0 1 22.6%;
+			margin: 0px 8px 16px 8px;
+		}
 	}
 }
 
@@ -31,23 +46,26 @@
 		object-position: center;
 		box-shadow: (0px 10px 20px #000000);
 	}
-	&__logo {
+	&__person {
 		position: absolute;
 		display: flex;
 		flex-direction: column;
 		width: 100%;
 		height: 100%;
 		justify-content:center;
-		
 		top: 120px;
 		left: 18px;
-		p {
+		.item__person-name {
 			color: #fff;
 			font-size: 22px;
 			font-weight: 600;
 			line-height: 17px;
+			@media (max-width: breakpoints.$breakpoint_md){
+				font-size: 14px;
+				line-height: 5px;
+			}
 		}
-		span {
+		.item__person-role {
 			display: block;
 			margin: 10px 0px 0px 0px;
 			font-size: 14px;
@@ -55,6 +73,14 @@
 			line-height: 17px;
 			color: #C9CED4;
 			width: 71%;
+			@media (max-width: breakpoints.$breakpoint_md){
+				font-size: 10px;
+				width: 85%;
+			}
+		}
+		@media (max-width: breakpoints.$breakpoint_md){
+			top: 65px;
+			left: 13px;
 		}
 	}
 
@@ -71,20 +97,28 @@
 		justify-content:center;
 		align-items: center;
 		background-color: rgba(100, 194, 158, 0.5);
+		border-radius: 8px;
 		z-index: 2;
 		opacity: 0;
 		visibility: hidden;
-		span{
+		.logo__text{
 			margin: 10px 0px 0px 0px;
 			font-size: 14px;
 			font-weight: 700;
 			letter-spacing: 2.8px;
 			text-transform: uppercase;
 			color: #fff;
+			@media (max-width: breakpoints.$breakpoint_md){
+				font-size: 8px;
+			}
 		}
 		.logo__image{
 			max-width: 150px;
+			@media (max-width: breakpoints.$breakpoint_md){
+				max-width: 80px;
+			}
 		}
+		
 	}
 	&:hover{
 		.logo__item{
