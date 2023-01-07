@@ -10,6 +10,26 @@
 		margin-left: 212px;
 		margin-right: 212px;
 		flex-wrap:wrap;
+		@media (max-width: breakpoints.$breakpoint_bl){
+			margin-left: 185px;
+			margin-right: 185px;
+		}
+		@media (max-width: breakpoints.$breakpoint_bg){
+			margin-left: 152px;
+			margin-right: 152px;
+		}
+		@media (max-width: breakpoints.$breakpoint_bx){
+			margin-left: 122px;
+			margin-right: 122px;
+		}
+		@media (max-width: breakpoints.$breakpoint_xg){
+			margin-left: 92px;
+			margin-right: 92px;
+		}
+		@media (max-width: breakpoints.$breakpoint_xl){
+			margin-left: 62px;
+			margin-right: 62px;
+		}
 		@media (max-width: breakpoints.$breakpoint_md) {
 			margin-left: 32px;
 			margin-right: 32px;
@@ -20,15 +40,32 @@
 		}
 	}
 	&__column {
-		flex: 0 1 auto;
+		flex: 0 1 17%;
 		margin: 0px auto 40px auto;
 		justify-content: center;
 		// &:nth-child(5){
 		// 	margin-right: 0;
 		// }
+		@media (max-width: breakpoints.$breakpoint_xg){
+			flex: 0 1 22%;
+		}
+		@media (max-width: breakpoints.$breakpoint_xl){
+			flex: 0 1 23%;
+		}
+		@media (max-width: breakpoints.$breakpoint_lg){
+			flex: 0 1 24%;
+			margin-bottom: 20px;
+		}
 		@media (max-width: breakpoints.$breakpoint_md){
 			flex: 0 1 22.6%;
 			margin: 0px 8px 16px 8px;
+		}
+		@media (max-width: breakpoints.$breakpoint_sm){
+			flex: 0 1 29.6%;
+		}
+		@media (max-width: breakpoints.$breakpoint_xs){
+			flex: 0 1 49%;
+			margin: 0px 1px 8px 1px;
 		}
 	}
 }
@@ -60,9 +97,16 @@
 			font-size: 22px;
 			font-weight: 600;
 			line-height: 17px;
+			@media (max-width: breakpoints.$breakpoint_xl){
+				font-size: 14px;
+				line-height: 5px;
+			}
 			@media (max-width: breakpoints.$breakpoint_md){
 				font-size: 14px;
 				line-height: 5px;
+			}
+			@media (max-width: breakpoints.$breakpoint_sm){
+				font-size: 10px;
 			}
 		}
 		.item__person-role {
@@ -73,14 +117,29 @@
 			line-height: 17px;
 			color: #C9CED4;
 			width: 71%;
+			@media (max-width: breakpoints.$breakpoint_xl){
+				font-size: 10px;
+				width: 85%;
+			}
 			@media (max-width: breakpoints.$breakpoint_md){
 				font-size: 10px;
 				width: 85%;
 			}
+			@media (max-width: breakpoints.$breakpoint_sm){
+				font-size: 8px;
+			}
+		}
+		@media (max-width: breakpoints.$breakpoint_bx){
+			top: 65px;
+			left: 13px;
 		}
 		@media (max-width: breakpoints.$breakpoint_md){
 			top: 65px;
 			left: 13px;
+		}
+		@media (max-width: breakpoints.$breakpoint_xs){
+			top: 50px;
+			left: 10px;
 		}
 	}
 
@@ -118,7 +177,9 @@
 				max-width: 80px;
 			}
 		}
-		
+		@media (max-width: breakpoints.$breakpoint_xs){
+			top: -5px;
+		}
 	}
 	&:hover{
 		.logo__item{
