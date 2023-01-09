@@ -58,6 +58,20 @@ block content
         "url": "#"
       },
     ]
+
+  -
+    const briefs = [
+      {
+        name: 'profile',
+        title: 'Главный профиль',
+        text: "Сервис (страница), где владелец (пользователь) размещает информацию о себе и своем окружении в фото и видео формате."
+      },
+      {
+        name: 'lenta',
+        title: 'Лента SFERA',
+        text: 'Агрегатор контента SFERA, который будет формировать вашу новостную ленту с развивающим контентом. Сервис не решает за Вас, что Вам показывать. Вы увидите весь контент на который подписаны, плюс лучшее в системе за определенный промежуток времени.'
+      }
+    ]
   
   article.apps
 
@@ -88,3 +102,17 @@ block content
           .apps__lead-image-container
             .apps__lead-image-wrapper
               img.apps__lead-image(src=require('Images/apps/lead-image.png'))
+
+    section.section.apps__briefs
+      .section__wrapper
+        ul.apps__briefs-list 
+          each brief in briefs
+            li.apps__briefs-item 
+              .apps__brief-text-container 
+                h2.apps__brief-title= brief.title
+                p.apps__brief-text= brief.text
+              .apps__brief-images-container
+                .apps__brief-image-wrapper
+                  img.apps__brief-image(src=require('Images/apps/' + brief.name + '_ios.jpg'))
+                .apps__brief-image-wrapper
+                  img.apps__brief-image(src=require('Images/apps/' + brief.name + '_android.jpg'))
