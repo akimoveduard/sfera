@@ -15,3 +15,76 @@ append style
   link(href=require('./styles.scss') rel='stylesheet')
 
 block content
+  -
+    const apps = [
+      {
+        "name": "profile",
+        "title": "Профиль",
+        "url": "#"
+      },
+      {
+        "name": "lenta",
+        "title": "Лента",
+        "url": "#"
+      },
+      {
+        "name": "asap",
+        "title": "ASAP",
+        "url": "#"
+      },
+      {
+        "name": "choose",
+        "title": "Choose",
+        "url": "#"
+      },
+      {
+        "name": "black_box",
+        "title": "Black Box",
+        "url": "#"
+      },
+      {
+        "name": "videos",
+        "title": "Videos",
+        "url": "#"
+      },
+      {
+        "name": "job_lite",
+        "title": "Job Lite",
+        "url": "#"
+      },
+      {
+        "name": "find_friends",
+        "title": "Find Friends",
+        "url": "#"
+      },
+    ]
+  
+  article.apps
+
+    section.lead.section
+      .lead__container.section__wrapper.apps__lead-wrapper
+        .apps__list-container
+          h1.apps__lead-title Подприложения SFERA      
+          ul.apps__list 
+            each app in apps
+              li.apps__list-item
+                a.apps__list-link.link(href="#")
+                  img.apps__list-image(src=require("Images/apps/icon-" + app.name + ".svg"))
+                  span.apps__list-item-title= app.title
+        .apps__lead-grid
+          .apps__lead-content
+            p.apps__lead-text Основой приложения SFERA PROJECT является мессенджер, на&nbsp;базе которого существуют уже сейчас и постоянно добавляются разносторонние сервисы, например, сервис по&nbsp;поиску работы (Job Light), сервис знакомств (MeetNet), сервис по&nbsp;поиску друзей (Find Friends)
+              | 
+              span.nowrap и т.д.
+              | 
+              | Все сервисы являются неотъемлемой частью SFERA и работают как единое приложение. На&nbsp;данный момент все сервисы разрабатываются нами, но в&nbsp;будущем планируется подключение сторонних сервисов.
+            p.apps__lead-text На данный момент в&nbsp;системе доступны сервисы первого этапа разработки.
+          .apps__download-links-container
+            ul.download-buttons-list
+              li.download-buttons-list__item
+                a.button.button_theme_dark.button_type_android Скачать на Android 
+              li.download-buttons-list__item
+                a.button.button_theme_dark.button_type_ios Скачать на iOS
+          .apps__lead-image-container
+            .apps__lead-image-wrapper
+              img.apps__lead-image(src=require('Images/apps/lead-image.png'))
