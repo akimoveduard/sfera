@@ -226,7 +226,7 @@ block content
   //-             p.team__person-name= person.name + " "
   //-               span.team__person-role= person.role
 
-  .team 
+  .team
     .team__body
       each person in team
         .team__column
@@ -240,4 +240,3 @@ block content
                 span.item__person-role=person.role
             span.item__image.ibg
               img.team__photo(src= require("Images/team/" + person.image + ".jpg"), alt="Фото участника команды SFERA")
-              
