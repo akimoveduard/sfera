@@ -16,119 +16,129 @@ append style
 
 block content 
       section.lead
-        .lead__wrapper 
-          .lead-text
-            h1.lead__title IT-СТАРТАП
-            p.lead__subtitle SFERA цифровая экосистема для 
-              <br> развития и пользы вашей жизни
-            p.lead__slogan Изменим мир вместе
-            .lead__button
-              ul.lead__download-links-list
-                li.lead__download-links-list-item
-                  a.lead__download-link.button.button_theme_dark.button_type_android Скачать на Android 
-                li.lead__download-links-list-item
-                  a.lead__download-link.button.button_theme_dark.button_type_ios Скачать на iOS
-          .lead__image 
-              .lead__image__image 
-                img.image(src=require("Images/home/foto main.png"))
-              .lead__image__faq
-                img.image(src=require("Images/home/fag.svg")) 
+        .lead__wrapper
+          .lead__content 
+            .lead-text
+              h1.lead__title IT-СТАРТАП
+              p.lead__subtitle SFERA цифровая экосистема для 
+                <br> развития и пользы вашей жизни
+              p.lead__slogan Изменим мир вместе
+            .lead__image  
+              img.lead__image-main(src=require("Images/home/main.png"))
+                //- .lead__image__faq
+                //-   img.image__main-fag(src=require("Images/home/fag.svg"))
+          .lead__button
+                ul.lead__download-links-list
+                  li.lead__download-links-list-item
+                    a.lead__download-link.button.button_theme_dark.button_type_android Скачать на Android 
+                  li.lead__download-links-list-item
+                    a.lead__download-link.button.button_theme_dark.button_type_ios Скачать на iOS
 
 
       section.description
         .description__wrapper
           .description-text    
             .description__content
-              .description__image
+              .description
                 .description__image__logo
                   hr.description__line
-                  img.description__svg__logo(src=require("Images/home/лого рабочий.svg"))
-                p.description__subtitle — это мобильное приложение, цифровая экосистема,
-                  |строящаяся по принципу all in one, когда все что
-                  |вам необходимо находится в одном месте. Основой системы
-                  |является мессенджер, на базе которого существуют
-                  |различные сервисы.
-                p.description__subtitle Все сервисы и весь контент в системе ориентированы на три
-                  |сферы жизни каждого человека: работа, личная жизнь, хобби.
-                  |SFERA должна помогать развиваться пользователю в первую очередь
-                  |в оффлайн жизни.
+                  img.description__svg__logo(src=require("Images/home/logo-work.svg"))
+                p.description__subtitle — это мобильное приложение, цифровая экосистема, строящаяся по принципу all in one, когда все что вам необходимо находится в одном месте. Основой системы является мессенджер, на базе которого существуют различные сервисы.
+                p.description__subtitle Все сервисы и весь контент в системе ориентированы на три сферы жизни каждого человека: работа, личная жизнь, хобби.SFERA должна помогать развиваться пользователю в первую очередь в оффлайн жизни.
                 p.description__subtitle Все сервисы и весь контент должны будут попадать под три
-                  |определения: развитие, польза, интересы. 
-            .description__image__image 
-                img.image(src=require("Images/home/group 48095454 1.png"))  
+                  <br>определения: развитие, польза, интересы. 
+            .description__image 
+                img.description__image-group(src=require("Images/home/group-one.png"))  
 
-      
       section.apps
         .apps__wrapper
-            ul.apps-list
-              li.apps-list__item.apps-list__item-profile
+            ul.apps__list
+              li.apps__list__item.apps-list__item-profile
                 .apps__text
                   h2.apps__title Главный профиль
                   p.apps__subtitle Сервис (страница), где владелец (пользователь) размещает информацию о себе и своем окружении в фото и видео формате.
-                img.image(src=require("Images/home/profile.png"))
-              li.apps-list__item.apps-list__item-asap
+                img.apps-image(src=require("Images/home/profile.png"))
+              li.apps__list__item.apps-list__item-asap
                 .apps__text
                   h2.apps__title ASAP
                   p.apps__subtitle ASAP — мультифункциональный мессенджер, который вберет в себя лучшие функции существующих мессенджеров. 
-                img.image(src=require("Images/home/group 480954567.png"))
-              li.apps-list__item.apps-list__item-meetnet 
+                img.apps-image(src=require("Images/home/group-two.png"))
+            ul.apps__list    
+              li.apps__list__item.apps-list__item-meetnet 
                 .apps__text
                   h2.apps__title MeetNet
                   p.apps__subtitle MeetNet — сервис для знакомств, синхронизированный с личным профилем. Люди подбираются по более чем 50 параметрам. 
-                img.image(src=require("Images/home/meetnet.png"))
-              li.apps-list__item.apps-list__item-videos
+                img.apps-image(src=require("Images/home/meetnet.png"))
+              li.apps__list__item.apps-list__item-videos
                 .apps__text
                   h2.apps__title Videos
                   p.apps__subtitle Видео сервис, главное преимущество которого, предоставление исключительно полезного, развивающего, интересного контента.
-                img.image(src=require("Images/home/videos.png"))
+                img.apps-image(src=require("Images/home/videos.png"))
             a.apps__link(href="") Посмотреть все приложения цифровой экосистемы
 
       section.anons
         .anons__wrapper
-          ul.anons-list
-            li.anons-list__item 
+          ul.anons__list
+            li.anons__list__item 
               .anons__content 
-                img.image__svg(src=require("Images/home/лого рабочий anons.svg"))
+                img.anons__content-image__svg(src=require("Images/home/logo-anons.svg"))
                 p.anons__subtitle__bold приглашает стартапы
               .anons__content__title 
                 p.anons__subtitle SFERA обладает функционалом мессенджера, социальной сети, видеосервиса, сервиса по поиску работы и деловым контактам, сервис знакомств и многое другое, что уже есть сейчас и будет в будущем. 
                 p.anons__subtitle Каждый сервис в системе, либо полностью уникален, либо имеет отличительные особенности в сравнении с аналогами.
-                p.anons__slogan__bold Подключите и вы свой сервис к цифровой экосистеме
-                .lead__download-links-list
-                  .lead__download-links-list-item
-                    a.lead__download-link.button.button_theme_light Хочу в SFERA        
-            li.anons-list__item
+                p.anons__slogan Подключите и вы свой сервис к цифровой экосистеме
+                button.anons__button Хочу в SFERA 
+                //- .lead__download-links-list
+                //-   .lead__download-links-list-item
+                //-     a.lead__download-link.button.button_theme_light Хочу в SFERA        
+            li.anons__list__item
               .anons__content 
-                img.image__svg(src=require("Images/home/лого рабочий anons.svg"))
+                img.anons__content-image__svg(src=require("Images/home/logo-anons.svg"))
                 p.anons__subtitle__bold инвестиции
               .anons__content__title 
                 p.anons__subtitle SFERA обладает функционалом мессенджера, социальной сети, видеосервиса, сервиса по поиску работы и деловым контактам, сервис знакомств и многое другое, что уже есть сейчас и будет в будущем. 
                 p.anons__subtitle На данном этапе мы не можем четко сказать, как и когда инвестор получит документальное подтверждение. Но это точно произойдёт. Возможны два варианта:
-                ul.anons__list
-                  li подписание опционов с последующим переводом в акции;
-                  li предоставление токенов.
+                ul.anons__list-subtitle
+                  li.anons__subtitle подписание опционов с последующим переводом в акции;
+                  li.anons__subtitle предоставление токенов.
                 p.anons__subtitle Наша главная цель в работе с инвесторами — это Х100 для инвесторов.
-                p.anons__slogan__bold Инвестиции ускоряют нашу работу
-                .lead__download-links-list
-                  .lead__download-links-list-item
-                    a.lead__download-link.button.button_theme_light Хочу инвестировать в SFERA       
+                p.anons__slogan Инвестиции ускоряют нашу работу
+                button.anons__button Хочу инвестировать 
+                //- .lead__download-links-list
+                //-   .lead__download-links-list-item
+                //-     a.lead__download-link.button.button_theme_light Хочу инвестировать в SFERA  
+                      
       section.swiper__section
         .swiper
           .swiper-wrapper
             .swiper-slide
-              img(src=require("Images/home/горизонтальная обложка на FB-рус 1200x630.png"))
+              img.swiper-slide-image(src=require("Images/home/swipper-one.png"))
             .swiper-slide
-              img(src=require("Images/home/горизонтальная обложка на FB-рус 1200x630.png"))
-            .swiper-slide 
-              img(src=require("Images/home/горизонтальная обложка на FB-рус 1200x630.png"))
-            .swiper-slide 
-              img(src=require("Images/home/горизонтальная обложка на FB-рус 1200x630.png"))
-            .swiper-slide 
-              img(src=require("Images/home/горизонтальная обложка на FB-рус 1200x630.png"))
+              img.swiper-slide-image(src=require("Images/home/swipper-one.png"))
+            .swiper-slide
+              img.swiper-slide-image(src=require("Images/home/swipper-one.png"))
+            .swiper-slide
+              img.swiper-slide-image(src=require("Images/home/swipper-one.png"))
+            .swiper-slide
+              img.swiper-slide-image(src=require("Images/home/swipper-one.png"))
+            .swiper-slide
+              img.swiper-slide-image(src=require("Images/home/swipper-one.png"))
+            .swiper-slide
+              img.swiper-slide-image(src=require("Images/home/swipper-one.png"))
+            .swiper-slide
+              img.swiper-slide-image(src=require("Images/home/swipper-one.png"))
+            .swiper-slide
+              img.swiper-slide-image(src=require("Images/home/swipper-one.png"))
+            .swiper-slide
+              img.swiper-slide-image(src=require("Images/home/swipper-one.png"))
+            .swiper-slide
+              img.swiper-slide-image(src=require("Images/home/swipper-one.png"))
+            .swiper-slide
+              img.swiper-slide-image(src=require("Images/home/swipper-one.png"))
               |...
           .swiper-pagination
           .swiper-button-prev
           .swiper-button-next
-          .swiper-scrollbar
+          //- .swiper-scrollbar
         .swiper__pause
           img(src=require("Images/home/pause_circle_outline_24px.svg"))
