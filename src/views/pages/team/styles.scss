@@ -23,8 +23,8 @@
 			margin-right: 122px;
 		}
 		@media (max-width: breakpoints.$breakpoint_xg){
-			margin-left: 92px;
-			margin-right: 92px;
+			margin-left: 106px;
+			margin-right: 106px;
 		}
 		@media (max-width: breakpoints.$breakpoint_xl){
 			margin-left: 62px;
@@ -38,6 +38,10 @@
 				justify-content: center;
 			}
 		}
+		@media (max-width: breakpoints.$breakpoint_xm){
+			margin-left: 12px;
+			margin-right: 12px;
+		}
 	}
 	&__column {
 		flex: 0 1 17%;
@@ -47,7 +51,8 @@
 		// 	margin-right: 0;
 		// }
 		@media (max-width: breakpoints.$breakpoint_xg){
-			flex: 0 1 22%;
+			flex: 0 1 21.6%;
+			margin: 0px 20px 40px 20px;
 		}
 		@media (max-width: breakpoints.$breakpoint_xl){
 			flex: 0 1 23%;
@@ -62,6 +67,10 @@
 		}
 		@media (max-width: breakpoints.$breakpoint_sm){
 			flex: 0 1 29.6%;
+		}
+		@media (max-width: breakpoints.$breakpoint_xm){
+			flex: 0 1 47%;
+			margin: 0px 4px 8px 4px;
 		}
 		@media (max-width: breakpoints.$breakpoint_xs){
 			flex: 0 1 49%;
