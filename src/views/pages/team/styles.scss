@@ -25,6 +25,10 @@
 		@media (max-width: breakpoints.$breakpoint_xg){
 			margin-left: 106px;
 			margin-right: 106px;
+			&:last-child{
+				align-items: center;
+				justify-content: center;
+			}
 		}
 		@media (max-width: breakpoints.$breakpoint_xl){
 			margin-left: 62px;
@@ -45,8 +49,8 @@
 	}
 	&__column {
 		flex: 0 1 17%;
-		margin: 0px auto 40px auto;
-		justify-content: center;
+		margin: 0px 20px 40px 20px;
+		// justify-content: center;
 		// &:nth-child(5){
 		// 	margin-right: 0;
 		// }
