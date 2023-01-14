@@ -1,3 +1,5 @@
+@use '../../../assets/styles/abstracts/breakpoints' as breakpoints;
+
 .footer {
   padding: 119px 0 129px 0;
 
@@ -67,10 +69,8 @@
   }
 }
 
-// @use '../../../assets/styles/abstracts/breakpoints' as breakpoints;
 
-// @media screen and  (max-width: breakpoints.$breakpoint_xl){}
-@media screen and  (max-width: 1600px) {
+@media screen and  (max-width: breakpoints.$breakpoint_xxl){
   .footer__contacts,
   .footer__social-links {
     margin-right: 160px;
@@ -79,23 +79,74 @@
     justify-content: center;
   }
 }
-@media screen and  (max-width: 1440px) {
+@media screen and  (max-width: breakpoints.$breakpoint_xl){
+  .footer {
+    padding: 90px  0;
+  }  
   .footer__contacts,
   .footer__social-links {
-    margin-right: 50px;
+    margin-right: 10px;
+  }
+  .footer__container {
+    padding: 0;
   }
 }
-@media screen and  (max-width: 768px) {
+@media screen and  (max-width: breakpoints.$breakpoint_lg){
   .footer {
     padding: 31px 0 31px 0;
   }
   .footer__contacts, .footer__social-links {
-    margin-right: 100px;
-}
-.footer__contacts, .footer__download-links {
+    margin-right: 180px;
+  }
+  .footer__contacts, .footer__download-links {
   margin-bottom: 50px;
+  }
+  .footer__copyright-text {
+    margin: 0 40px 10px;
+  }
 }
-.footer__copyright-text {
-  margin: 0 40px 10px;
+@media screen and  (max-width: breakpoints.$breakpoint_md){
+  .footer__container {
+    padding: 0 50px;
+  }
+  .contacts-list__item {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+  .footer__title.color_grey {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 600;
+    padding: 0;
+  }
+  .footer__download-link {
+    font-size: 18px;
+  }
+  .footer__download-links-list {
+    margin-right: 85px;;
+  }
+
+  .footer__copyright-text {
+    margin: 0 0px 10px;
+  }
 }
+@media screen and  (max-width: breakpoints.$breakpoint_xs){
+  .footer__container {
+    padding: 0 16px;
+  }
+  .footer__download-links-list {
+    flex-direction: column;
+  }
+  .footer__contacts, .footer__social-links,.footer__download-links-list {
+    margin-right: 0;
+  }
+  .footer__download-links-list-item {
+    margin: 10px 0;
+  }
+  .button {
+    width: 200px;
+    margin: 0 auto;
+  }
+
 }

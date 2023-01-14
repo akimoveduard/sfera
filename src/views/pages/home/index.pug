@@ -17,38 +17,40 @@ append style
 block content 
       section.lead
         .lead__wrapper
-          .lead__content 
-            .lead-text
-              h1.lead__title IT-СТАРТАП
-              p.lead__subtitle SFERA цифровая экосистема для 
-                <br> развития и пользы вашей жизни
-              p.lead__slogan Изменим мир вместе
-            .lead__image  
-              img.lead__image-main(src=require("Images/home/main.png"))
+          .lead__content
+                .lead-text
+                  h1.lead__title IT-СТАРТАП
+                  p.lead__subtitle SFERA цифровая экосистема для
+                  
+                    <br> развития и пользы вашей жизни
+                  p.lead__slogan Изменим мир вместе
+                  .lead__buttons
+                    //- ul.lead__download-links-list
+                    //-   li.lead__download-links-list-item
+                    button.lead__button Скачать на Android 
+                      //-   a.lead__download-link.button.button_theme_dark.button_type_android Скачать на Android 
+                      //- li.lead__download-links-list-item
+                    button.lead__button Скачать на iOS
+                        //- a.lead__download-link.button.button_theme_dark.button_type_ios Скачать на iOS
+                .lead__image  
+                  img.lead__image-main(src=require("Images/home/main.png"))
                 //- .lead__image__faq
                 //-   img.image__main-fag(src=require("Images/home/fag.svg"))
-          .lead__button
-                ul.lead__download-links-list
-                  li.lead__download-links-list-item
-                    a.lead__download-link.button.button_theme_dark.button_type_android Скачать на Android 
-                  li.lead__download-links-list-item
-                    a.lead__download-link.button.button_theme_dark.button_type_ios Скачать на iOS
-
+          
 
       section.description
         .description__wrapper
-          .description-text    
+          .description-main    
             .description__content
-              .description
-                .description__image__logo
-                  hr.description__line
-                  img.description__svg__logo(src=require("Images/home/logo-work.svg"))
+              .description__image__logo
+                hr.description__line
+                img.description__svg__logo(src=require("Images/home/logo-work.svg"))
+              .description__text-subtitle  
                 p.description__subtitle — это мобильное приложение, цифровая экосистема, строящаяся по принципу all in one, когда все что вам необходимо находится в одном месте. Основой системы является мессенджер, на базе которого существуют различные сервисы.
                 p.description__subtitle Все сервисы и весь контент в системе ориентированы на три сферы жизни каждого человека: работа, личная жизнь, хобби.SFERA должна помогать развиваться пользователю в первую очередь в оффлайн жизни.
-                p.description__subtitle Все сервисы и весь контент должны будут попадать под три
-                  <br>определения: развитие, польза, интересы. 
+                p.description__subtitle Все сервисы и весь контент должны будут попадать под три определения: развитие, польза, интересы. 
             .description__image 
-                img.description__image-group(src=require("Images/home/group-one.png"))  
+              img.description__image-group(src=require("Images/home/group-one.png"))  
 
       section.apps
         .apps__wrapper
@@ -63,7 +65,6 @@ block content
                   h2.apps__title ASAP
                   p.apps__subtitle ASAP — мультифункциональный мессенджер, который вберет в себя лучшие функции существующих мессенджеров. 
                 img.apps-image(src=require("Images/home/group-two.png"))
-            ul.apps__list    
               li.apps__list__item.apps-list__item-meetnet 
                 .apps__text
                   h2.apps__title MeetNet
@@ -135,7 +136,7 @@ block content
               img.swiper-slide-image(src=require("Images/home/swipper-one.png"))
             .swiper-slide
               img.swiper-slide-image(src=require("Images/home/swipper-one.png"))
-              |...
+              //- |...
           .swiper-pagination
           .swiper-button-prev
           .swiper-button-next

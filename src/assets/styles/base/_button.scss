@@ -1,3 +1,5 @@
+@use '../../../assets/styles/abstracts/breakpoints' as breakpoints;
+
 .button {
   display: block;
   font-size: $buttonFontSize;
@@ -90,7 +92,7 @@
       padding-left: 78px;
     }
     
-    &_ios::after, &_android::after {
+    &_android::after {
       position: absolute;
       z-index: -1;
       background-image: url('../../images/buttons/button-image.svg');
@@ -98,6 +100,15 @@
       background-position: 34px center;
       background-size: 30px;
     }
+    &_ios::after {
+      position: absolute;
+      z-index: -1;
+      background-image: url('../../images/buttons/button-apple.svg');
+      background-repeat: no-repeat;
+      background-position: 34px center;
+      background-size: 30px;
+    }
+
   }
 
   &__play-video {
@@ -109,4 +120,21 @@
     background-size: 14px;
     background-position: 23px center;
   }
+}
+@media screen and  (max-width: breakpoints.$breakpoint_xs) {
+  .button_type_android {
+    padding-left: 60px;
+    text-align: center;
+  }
+  .button_type_ios {
+    padding-left: 60px ;
+    text-align: center;
+  }
+  .footer__download-links {
+    position: absolute;
+    margin-bottom: 50px;
+}
+  .footer__contacts {
+    margin-top: 280px;
+}
 }
