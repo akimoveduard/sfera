@@ -16,18 +16,19 @@ append style
 
 block content
   section.lead
-    .lead__container
-      .lead__conteiner__text
-        h1.lead__title Скачайте приложение SFERA
-        p.lead__subtitle Присоединяйтесь к нам, давайте изменим мир вместе. 
-      a.lead__link__android
-        img.lead__link__android_image(src=require("Images/downloads/Component 2.svg")) 
-        span Скачать на Android
-      a.lead__link__ios
-        img.lead__link__android_image(src=require("Images/downloads/Component 2.svg"))
-        span Скачать на OIS
-    .lead__image
-      .lead__image__image 
-        img(src=require("Images/downloads/iOS - меню (1).png"))
-      .lead__image__faq
-        img(src=require("Images/downloads/Android - вход.png"))
+    .lead__wrapper
+      .lead__container
+        .lead__conteiner__text
+          h1.lead__title Скачайте приложение SFERA
+          p.lead__subtitle Присоединяйтесь к нам, давайте изменим мир вместе. 
+        a.lead__link__android
+          img.lead__link__android_image(src=require("Images/downloads/Component 2.svg")) 
+          span Скачать на Android
+        a.lead__link__ios
+          img.lead__link__android_image(src=require("Images/downloads/Component 2.svg"))
+          span Скачать на OIS
+      .lead__image
+        .lead__image__image 
+          img(src=require("Images/downloads/iOS - меню (1).png"))
+        .lead__image__faq
+          img(src=require("Images/downloads/Android - вход.png"))
