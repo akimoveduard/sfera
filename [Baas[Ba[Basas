@@ -1,0 +1,71 @@
+[33mcommit d3df308eb7168751cd1102c4ccb4798ce7d49ce3[m[33m ([m[1;36mHEAD -> [m[1;32mstartups[m[33m, [m[1;31morigin/startups[m[33m)[m
+Author: Yernar <ernar_9.6@bk.ru>
+Date:   Fri Dec 30 19:35:21 2022 +0600
+
+    startups-Yernar-3
+    
+    third article
+
+[33mcommit 5b5db57afe5a327f1a0bf2a2e148af4dd2e8a0bc[m
+Author: Yernar <ernar_9.6@bk.ru>
+Date:   Fri Dec 30 18:19:04 2022 +0600
+
+    startups-Yernar-2
+    
+    second page
+
+[33mcommit 5e11213fa591e0127663e26a0626366cf9f8bbde[m
+Author: Yernar <ernar_9.6@bk.ru>
+Date:   Fri Dec 30 00:06:00 2022 +0600
+
+    startups-Yernar
+    
+    first page
+
+[33mcommit 9c08524f2c27a9f63854f4183e30ebf28d4d2803[m[33m ([m[1;31morigin/news[m[33m)[m
+Author: Akimov Eduard <95487679+akimoveduard@users.noreply.github.com>
+Date:   Wed Dec 28 16:00:13 2022 +0300
+
+    Update webpack.config.js
+
+[33mcommit a2a341cda8978d8ca1202ef47e204cbc7da9bda9[m
+Author: Akimov Eduard <95487679+akimoveduard@users.noreply.github.com>
+Date:   Wed Dec 28 15:45:10 2022 +0300
+
+    docs: обновить README.md
+
+[33mcommit aa658758aed4e7ce0a740ab621c664e03dcee9c5[m
+Author: Akimov Eduard <95487679+akimoveduard@users.noreply.github.com>
+Date:   Wed Dec 28 15:43:40 2022 +0300
+
+    Update README.md
+
+[33mcommit dc33605d90fe3ecda4a87dc6252728b48e3257cf[m
+Author: Akimov Eduard <95487679+akimoveduard@users.noreply.github.com>
+Date:   Wed Dec 28 15:43:08 2022 +0300
+
+    docs: обновить README.md
+
+[33mcommit 95ec8d2b2d45e143d32ae430ce96fe3ca97fb6cc[m
+Author: Akimov Eduard <95487679+akimoveduard@users.noreply.github.com>
+Date:   Wed Dec 28 15:38:31 2022 +0300
+
+    files!: добавить файловую структуру для новых страниц
+
+[33mcommit ee0c337d14754554149496d3924586031892bc66[m
+Author: Akimov Eduard <95487679+akimoveduard@users.noreply.github.com>
+Date:   Wed Dec 28 12:39:39 2022 +0300
+
+    files: создать файловую структуру проекта
+
+[33mcommit 691987d993dca5b6d65b9b41286bc0cbc6c4556e[m
+Author: Akimov Eduard <95487679+akimoveduard@users.noreply.github.com>
+Date:   Wed Dec 28 12:27:45 2022 +0300
+
+    docs: создать README.md
+
+[33mcommit 5fb69a629190e0d9cc6180fa7dd07a25ca90a364[m
+Author: Эдуард Акимов <95487679+akimoveduard@users.noreply.github.com>
+Date:   Wed Dec 28 12:26:17 2022 +0300
+
+    Initial commit

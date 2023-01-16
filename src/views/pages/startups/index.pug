@@ -14,15 +14,19 @@ append script
 append style
   link(href=require('./styles.scss') rel='stylesheet')
 
-block content
+block content        
   section.section.startups
     .section__wrapper 
       .lead
         .lead__texts  
-          h1.lead__title Приглашаем стартапы </br> в SFERA
-        
-        
-          p.lead__text Для действующих стартапов, которые находятся на стадии разработки или уже имеют работающий функционал мы готовы рассмотреть вопрос интеграции в SFERA, </br>при соблюдении следующих условий.
+          h1.lead__title Приглашаем стартапы  </br> в SFERA 
+          p.lead__text Для действующих стартапов, которые </br>  находятся на стадии разработки или уже </br> имеют работающий функционал мы готовы </br> рассмотреть вопрос интеграции в SFERA, </br>при соблюдении следующих условий.
+          .lead__button
+            button.lead__button__lead-android Скачать на Android 
+              img(src=require('Images/startups-png/component.png'))
+            button.lead__button__lead-ios Скачать на iOS  
+              img(src=require('Images/startups-png/vector.png'))
+        .lead__images
           img.lead__image(src=require('Images/startups-png/iphone_12_pro.png'))
     //- second page
   section.section-two
@@ -43,7 +47,7 @@ block content
         .list__images
           img.list__image(src=require('Images/startups-png/frame_1619.png'))
     .frame 
-      img.frame__image(src=require('Images/startups-png/frame_1586.png'))
+      img.frame__image(src=require('Images/startups-png/frame.png'))
       p.frame__text Мы считаем, что многие сервисы, безусловно </br> полезны и нужны пользователям, но зачастую, из - </br> за высокой стоимости разработки или затрат на </br> привлечение пользователя, реализация проектов </br> становится невозможной. В рамках проекта </br> SFERA, в несколько раз снижается стоимость </br> разработки и нет необходимости нести </br> финансовые расходы на маркетинг.
            
 

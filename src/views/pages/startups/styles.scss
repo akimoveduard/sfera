@@ -3,26 +3,33 @@
     color: white;
 }
 
+.lead{
+    display: flex;
+    align-items: center;
+    padding-bottom: 200px;
+  
+}
 .lead__texts{
     display: flex;
     flex-direction: column;
+    width: 914px;
+    height: 519px;
 }
-
 .lead__title{
 font-weight: 300;
 font-size: 72px;
 line-height: 87px;
 color: #FFFFFF;
-margin-top: 200px;
+margin-top: 0px;
+width:1000px;
+text-transform: uppercase;
 }
-
 .lead__text{
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
     color: #FFFFFF;
     margin-top: 0px;
-
 }
 
 .lead__images{
@@ -34,10 +41,53 @@ margin-top: 200px;
 
 
 .lead__image{
-    margin-top:-90px;
-    
+    margin-top: 240px;
+    margin-left: -200px;
     
 }
+
+
+.lead__button{
+    width: 669px;
+    height: 70px;
+    display: flex;
+    margin-top: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 20px;
+    
+
+    &__lead-android{
+      width: 343px;
+      height: 70px;
+      display: flex;
+      flex-direction: row-reverse;
+      column-gap: 10px;
+      justify-content: center;
+      align-items: center;
+      filter: drop-shadow(0px -4px 4px rgba(255, 0, 245, 0.25)) drop-shadow(0px 4px 4px rgba(34, 218, 229, 0.25));
+      border-radius: 24px;
+      background: linear-gradient(180deg, #28282C 0%, #000000 100%)black;
+      color: white;
+    }
+
+    &__lead-ios{
+        width: 343px;
+        height: 70px;
+        display: flex;
+        flex-direction: row-reverse;
+        column-gap: 10px;
+        justify-content: center;
+        align-items: center;
+        filter: drop-shadow(0px -4px 4px rgba(255, 0, 245, 0.25)) drop-shadow(0px 4px 4px rgba(34, 218, 229, 0.25));
+        border-radius: 24px;
+        background: linear-gradient(180deg, #28282C 0%, #000000 100%)black;
+        color: white;
+    }
+}
+
+
 
 // second page
 
