@@ -194,20 +194,248 @@ text-transform: uppercase;
 
 // Adaptive
 
-@media only screen and (max-width:768px){
+
+
+
+
+@media screen and (max-width:1440px) {
     
+
+}
+
+
+@media screen and (max-width:768px) {   
+
+    .lead{
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-top: 80px;
+        padding-bottom: 0px;
+
+    }
+    
+
+    .lead__text{
+        width: 332px;
+        height: 108px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 27px;
+     
+        margin-top: -50px;
+    }
+
+    
+    .lead__title{
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 43.57px;
+        width: 500px;
+        height: 132px;
+        text-transform: uppercase;
+    }
+
     .lead__images{
-        display: flex;
-       
+        margin-bottom: 135px;
 
     }
 
     .lead__image{
-        max-width: 100%;
-        object-fit: cover;
+        width: 303.92px;
+        height: 187.26px;
     }
 
+    .lead__button{
+      width: 504px;
+      height: 70px;
+      display: flex;
+     
+      margin-bottom: 20px;
+      flex-direction: row;
+      column-gap: 20px;
+      margin-top: 30px;
+      padding-top: 130px;
+    }
+
+    .lead__button__lead-android{
+        width: 262px;
+        height: 60px;
+        column-gap: 10px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .lead__button__lead-ios{
+        width: 222px;
+        height: 60px;
+        font-size: 18px;
+        line-height: 22px;
+     
+
+    }
+
+
+
+    .list{
+        margin-left: 50px;
+        margin-right: 50px;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .list__items {
+        margin-top: -180px;
+        margin-left: auto;
+    }
+    .list__circle{
+        background: black;
+        border-radius: 100%;
+        color: #FFFFFF;
+        font-weight: bold;
+        line-height: 60px;
+        text-align: center;
+        width: 60px;
+        height: 60px;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .text-list__list-item{
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 400;
+        width: auto;
+        
+
+    }
+
+    .list__images{
+    }
+
+    .list__image{
+        width: 403px;
+        height: 372px;
+        margin-left: 150px;
+
+    }
+
+    .frame{
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+
+    }
+
+    .frame__image{
+        margin-left: -190px;
+        margin-top: -80px;
+    }
+
+    .frame__text{
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 400;
+        margin-top: -150px;
+        white-space: nowrap;
+        
+
+    }
+
+
+
+
+
 }
+
+
+// @media screen and (max-width:375px){
+
+//     .lead{
+//         display: flex;
+//         flex-wrap: wrap;
+//         margin-left:26px;
+//         margin-right: 26px;
+
+//     }
+
+//     .lead__texts {
+
+//     }
+
+//     .lead__images{
+
+//     }
+
+//     .lead__title{
+//       width: 316px;
+//       height: 54px;
+//       font-weight: 600;
+//       font-size: 22px;
+//       line-height: 27px;
+//       text-transform: uppercase;
+//     }
+
+//     .lead__text{
+//       width: 260px;
+//       height: 88px;
+//       font-style: normal;
+//       font-weight: 600;
+//       font-size: 18px;
+//       line-height: 22px;
+//       margin-top: 0px;
+      
+//     }
+
+//     .lead__button{
+//       margin-top: 0px;  
+//       width: 271px;
+//       height: 130px;
+//       margin-top: 270px;
+//       margin-left: 40px;
+//       display: flex;
+//       justify-content: flex-start;
+//       flex-direction: column-reverse;
+//       row-gap: 20px;
+      
+//       &__lead-android{
+//         width: 251px;
+//         height: 50px;
+//         color: white;
+//         font-size: 18px;
+//         line-height: 22px;
+
+//       }
+
+//       &__lead-ios{
+//         width: 251px;
+//         height: 50px;
+//         font-size: 18px;
+//         line-height: 22px;
+
+//       }
+//     }
+
+//     .lead__images{
+        
+//     }
+//     .lead__image{
+//         width: 303px;
+//         height: 187px;
+        
+
+//     }
+
+
+    
+// }
+
+
+
+
+
 
 
 
