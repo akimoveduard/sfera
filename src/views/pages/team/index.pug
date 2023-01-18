@@ -15,3 +15,44 @@ append style
   link(href=require('./styles.scss') rel='stylesheet')
 
 block content
+  -
+    const team = [
+      {
+        'id': '1',
+        'name': 'Игорь',
+        'role': 'Основатель компании'
+      },
+      {
+        'id': '2',
+        'name': 'Карен',
+        'role': 'Проект-менеджер'
+      },
+      {
+        'id': '3',
+        'name': 'Ксения',
+        'role': 'Исполнительный директор'
+      },
+      {
+        'id': '4',
+        'name': 'Владимир',
+        'role': 'СТО, Golang-разработчик'
+      },
+      {
+        'id': '5',
+        'name': 'Аубакир',
+        'role': 'Системный аналитик, QA-инженер'
+      },
+    ]
+
+  article.team 
+
+    .section.team__gallery 
+      .section__wrapper 
+        ul.team__gallery-list 
+          each member in team
+            li.team__gallery-list-item
+              .team__gallery-list-image-wrapper
+                img.team__gallery-list-image(src=require('Images/team/' + member.id + '.jpg'))
+              .team__gallery-list-member-wrapper
+                p.team__gallery-list-member-name= member.name
+                p.team__gallery-list-member-role= member.role

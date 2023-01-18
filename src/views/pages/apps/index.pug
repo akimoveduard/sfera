@@ -3,16 +3,20 @@ extends Views/layouts/default.pug
 
 //- Инициализация переменных для использования в макете
 block variables
+  - const pageName = 'apps'
   - const title = 'SFERA'
   - const description = 'Описание страницы'
+  - const swiperEnable = true
 
 //- Подключение индивидуального скрипта страницы
 append script
-  script(src=require('./main.js') defer)
+  script(src='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js')
+  script(src=require('./main.js'))
 
 //- Подключение уникального стиля страницы
 append style
-  link(href=require('./styles.scss') rel='stylesheet')
+  link(href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css' rel='stylesheet')
+  link(href=require('./styles.scss') rel='stylesheet' defer)
 
 block content
   -
@@ -64,55 +68,128 @@ block content
       {
         name: 'profile',
         title: 'Главный профиль',
-        text: "Сервис (страница), где владелец (пользователь) размещает информацию о себе и своем окружении в фото и видео формате."
+        text: 'Сервис (страница), где владелец (пользователь) размещает информацию о&nbsp;себе и своем окружении в&nbsp;фото и видео формате.'
       },
       {
         name: 'lenta',
         title: 'Лента SFERA',
-        text: 'Агрегатор контента SFERA, который будет формировать вашу новостную ленту с развивающим контентом. Сервис не решает за Вас, что Вам показывать. Вы увидите весь контент на который подписаны, плюс лучшее в системе за определенный промежуток времени.'
+        text: 'ASAP — мультифункциональный мессенджер, который вберет в&nbsp;себя лучшие функции существующих мессенджеров.'
+      },
+      {
+        name: 'asap',
+        title: 'ASAP',
+        text: 'Агрегатор контента SFERA, который будет формировать вашу новостную ленту с&nbsp;развивающим контентом. Сервис не&nbsp;решает за&nbsp;вас, что вам показывать. Вы увидите весь контент на&nbsp;который подписаны, плюс лучшее в&nbsp;системе за&nbsp;определенный промежуток времени.'
+      },
+      {
+        name: 'meetnet',
+        title: 'Meetnet',
+        text: 'MeetNet — сервис для знакомств, синхронизированный с&nbsp;личным профилем. Люди подбираются по&nbsp;более чем 50&nbsp;параметрам.<br><br> Такой подход позволит в&nbsp;будущем составить практически идеальные пары.'
+      },
+      {
+        name: 'choose',
+        title: 'Choose',
+        text: 'Не знаете, что лучше? Воспользуйтесь этим сервисом и выявите мнение аудитории. В&nbsp;будущем это будет эффективным инструментом для&nbsp;бизнеса по&nbsp;проведению аналитических опросов.'
+      },
+      {
+        name: 'blackbox',
+        title: 'Black Box',
+        text: 'Позволяет находить новое общение по&nbsp;геолокации и беседовать на&nbsp;любые темы с&nbsp;любым пользователем. Для&nbsp;тех, кому не&nbsp;хватает общения и у&nbsp;кого есть вопросы, на&nbsp;не&nbsp;простые темы.'
+      },
+      {
+        name: 'videos',
+        title: 'Videos',
+        text: 'Видео сервис, главное преимущество которого, предоставление исключительно полезного, развивающего, интересного контента.'
+      },
+      {
+        name: 'joblite',
+        title: 'Job Lite',
+        text: 'Очень простое и понятное подприложение по&nbsp;поиску работы или сотрудников, для&nbsp;простых специальностей не&nbsp;требующих составление резюме. Прямой диалог между соискателем и работодателем.'
+      },
+      {
+        name: 'findfriends',
+        title: 'Find Friends',
+        text: 'Первый сервис имеющий единственной целью&nbsp;— поиск новых друзей в&nbsp;реальной (офлайн) жизни.'
       }
+    ]
+
+  -
+    const slides = [
+      {
+        title: 'Мероприятия',
+      },
+      {
+        title: 'FM-каналы',
+      },
+      {
+        title: 'Голосовые каналы',
+      },
+      {
+        title: 'Книги',
+      },
+      {
+        title: 'Таланты',
+      },
+      {
+        title: 'Work & Business',
+      },
     ]
   
   article.apps
 
-    section.lead.section
-      .lead__container.section__wrapper.apps__lead-wrapper
-        .apps__list-container
-          h1.apps__lead-title Подприложения SFERA      
-          ul.apps__list 
+    section.section.apps__subapps
+      .section__wrapper
+        .apps__subapps-wrapper
+          h1.apps__subapps-title Подприложения SFERA      
+          ul.apps__subapps-list 
             each app in apps
-              li.apps__list-item
-                a.apps__list-link.link(href="#")
-                  img.apps__list-image(src=require("Images/apps/icon-" + app.name + ".svg"))
-                  span.apps__list-item-title= app.title
-        .apps__lead-grid
-          .apps__lead-content
-            p.apps__lead-text Основой приложения SFERA PROJECT является мессенджер, на&nbsp;базе которого существуют уже сейчас и постоянно добавляются разносторонние сервисы, например, сервис по&nbsp;поиску работы (Job Light), сервис знакомств (MeetNet), сервис по&nbsp;поиску друзей (Find Friends)
+              li.apps__subapps-list-item
+                a.apps__subapps-list-item-link.link(href="#")
+                  img.apps__subapps-list-item-icon(src=require("Images/apps/icon-" + app.name + ".svg"))
+                  p.apps__subapps-list-item-title= app.title
+
+    section.section.lead.apps__lead
+      .section__wrapper 
+        .lead__grid.apps__lead-grid
+          .lead__text-container.apps__lead-text-container
+            p.lead__text Основой приложения SFERA PROJECT является мессенджер, на&nbsp;базе которого существуют уже сейчас и постоянно добавляются разносторонние сервисы, например, сервис по&nbsp;поиску работы (Job Light), сервис знакомств (MeetNet), сервис по&nbsp;поиску друзей (Find Friends)
               | 
               span.nowrap и т.д.
               | 
               | Все сервисы являются неотъемлемой частью SFERA и работают как единое приложение. На&nbsp;данный момент все сервисы разрабатываются нами, но в&nbsp;будущем планируется подключение сторонних сервисов.
-            p.apps__lead-text На данный момент в&nbsp;системе доступны сервисы первого этапа разработки.
-          .apps__download-links-container
-            ul.download-buttons-list
-              li.download-buttons-list__item
-                a.button.button_theme_dark.button_type_android Скачать на Android 
-              li.download-buttons-list__item
-                a.button.button_theme_dark.button_type_ios Скачать на iOS
-          .apps__lead-image-container
+            p.lead__text На данный момент в&nbsp;системе доступны сервисы первого этапа разработки.
+          .lead__image-container.apps__lead-image-container
             .apps__lead-image-wrapper
               img.apps__lead-image(src=require('Images/apps/lead-image.png'))
-
+          .lead__links-container.apps__lead-links-container
+            ul.download-buttons-list
+              li.download-buttons-list__item
+                a.button.button_theme_dark.button_type_android(href="#") Скачать на Android 
+              li.download-buttons-list__item
+                a.button.button_theme_dark.button_type_ios(href="#") Скачать на iOS
+    
     section.section.apps__briefs
       .section__wrapper
         ul.apps__briefs-list 
           each brief in briefs
             li.apps__briefs-item 
               .apps__brief-text-container 
-                h2.apps__brief-title= brief.title
-                p.apps__brief-text= brief.text
+                h2.section__title= brief.title
+                p.apps__brief-text !{brief.text}
               .apps__brief-images-container
                 .apps__brief-image-wrapper
                   img.apps__brief-image(src=require('Images/apps/' + brief.name + '_ios.jpg'))
                 .apps__brief-image-wrapper
                   img.apps__brief-image(src=require('Images/apps/' + brief.name + '_android.jpg'))
+    
+    section.section.apps__future      
+      h2.section__title.align_center Сервисы следующего этапа разработки
+
+      .swiper
+        .swiper-wrapper.apps__future-slide
+          each slide in slides 
+            .swiper-slide
+              .swiper-slide__wrapper
+                .swiper-slide__image-wrapper
+                  img.swiper-slide__image(src=require('Images/apps/slide_work-and-business.png'))
+                p.swiper-slide__title= slide.title
+        .swiper-pagination

@@ -2,6 +2,7 @@ const path = require('path');
 const PugPlugin = require('pug-plugin');
 
 module.exports = (env, argv) => {
+  
   const isProd = argv.mode === 'production';
 
   return {

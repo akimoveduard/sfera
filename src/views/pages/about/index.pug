@@ -15,3 +15,21 @@ append style
   link(href=require('./styles.scss') rel='stylesheet')
 
 block content
+  article.about
+
+    section.section.lead.about__lead
+      .section__wrapper
+        .lead__grid.about__lead-grid
+          .lead__text-container.about__lead-text-container
+            h1.lead__title Проект SFERA — это платформа приложений.
+            p.lead__subtitle Также в отношении нас будут корректны термины:<br> <span class="strong">супер&nbsp;приложение</span>, <br><span class="strong">анти&nbsp;социальная сеть</span>
+          .lead__image-container.about__lead-image-container
+            .about__lead-image-wrapper
+              img.home__lead-image(src=require('Images/about/lead-image.png'))
+          .lead__links-container.about__lead-links-container
+            .about__lead-links-wrapper
+              ul.download-buttons-list
+                li.download-buttons-list__item
+                  a.button.button_theme_dark.button_type_android Скачать на Android 
+                li.download-buttons-list__item
+                  a.button.button_theme_dark.button_type_ios Скачать на iOS

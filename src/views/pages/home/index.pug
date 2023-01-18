@@ -15,3 +15,38 @@ append style
   link(href=require('./styles.scss') rel='stylesheet')
 
 block content 
+  article.home 
+
+    .section.lead.home__lead
+      .section__wrapper 
+        .home__lead-grid 
+          .home__lead-grid-text-container 
+            .home__lead-text-section
+              h1.lead__title IT-стартап
+              p.lead__subtitle SFERA — цифровая экосистема для развития и пользы вашей жизни
+            .home__lead-text-section
+              p.lead__slogan Изменим мир вместе
+          .home__lead-grid-image-container 
+            img.home__lead-image(src=require('Images/home/lead-image.png', alt="Изображение телефона, на котором виден профиль пользователя мессенджера SFERA — девушки по имени Alice Peterson"))
+          .home__lead-grid-links-container
+            ul.download-buttons-list 
+              li.download-buttons-list__item 
+                a.button.button_theme_dark(href="#")
+                  span.button_type_android Скачать на Android
+              li.download-buttons-list__item 
+                a.button.button_theme_dark(href="#") 
+                  span.button_type_ios Скачать на iOS
+
+    .section.home__about 
+      .section__wrapper
+        .home__about-grid
+          .home__about-grid-text-container              
+            .home__about-content-wrapper 
+              .home__about-logo-wrapper
+                img.home__about-logo(src=require('Images/home/sfera.svg'))
+              .home__about-text-wrapper
+                p.home__about-text — это мобильное приложение, цифровая экосистема, строящаяся по принципу all in one, когда все что вам необходимо находится в одном месте. Основой системы является мессенджер, на базе которого существуют различные сервисы.
+                p.home__about-text Все сервисы и весь контент в системе ориентированы на три сферы жизни каждого человека: работа, личная жизнь, хобби. SFERA должна помогать развиваться пользователю в первую очередь в оффлайн жизни.
+                p.home__about-text Все сервисы и весь контент должны будут попадать под три определения: развитие, польза, интересы.
+          .home__about-grid-image-container
+            img.home__about-image(src=require('Images/home/group.jpg'))

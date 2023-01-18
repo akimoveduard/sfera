@@ -6,4 +6,10 @@ body {
   font-size: $fontSizeCommon;
   font-family: $fontFamily;
   font-weight: $fontWeightNormal;
+  background: white;
+  min-width: 320px;
+}
+
+article {
+  //border: 1px solid transparent;
 }

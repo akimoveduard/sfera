@@ -4,7 +4,16 @@
   &__wrapper {
     max-width: 1520px;
     margin: 0 auto;
-    padding: 0 0px;
+    padding: 0 45px;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0 0 36px;
+    text-transform: uppercase;
   }
 
   &_theme {
@@ -15,6 +24,10 @@
   }
 }
 
-@media screen and (max-width: $breakpoint_xxl) {
-  
+@media screen and (max-width: $breakpoint_sm) {
+  .section {
+    &__wrapper {
+      padding: 0 10px;
+    }
+  }
 }
